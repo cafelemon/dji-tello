@@ -1,0 +1,48 @@
+[0.923s] Invoking command in '/home/jf/tello_tracking_ws/src/yolov5_bytetrack_ros': PYTHONPATH=/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolov5_bytetrack_ros build --build-base /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build install --record /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/install.log --single-version-externally-managed install_data
+[1.248s] running egg_info
+[1.271s] writing ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/PKG-INFO
+[1.279s] writing dependency_links to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/dependency_links.txt
+[1.279s] writing entry points to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/entry_points.txt
+[1.280s] writing requirements to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/requires.txt
+[1.280s] writing top-level names to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/top_level.txt
+[1.306s] reading manifest file '../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/SOURCES.txt'
+[1.307s] writing manifest file '../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/SOURCES.txt'
+[1.307s] running build
+[1.307s] running build_py
+[1.308s] copying yolov5_bytetrack_ros/tracker_node.py -> /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolov5_bytetrack_ros
+[1.308s] creating /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox
+[1.308s] copying yolox/__init__.py -> /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox
+[1.309s] creating /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker
+[1.309s] copying yolox/tracker/__init__.py -> /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker
+[1.309s] copying yolox/tracker/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker
+[1.309s] copying yolox/tracker/matching.py -> /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker
+[1.309s] copying yolox/tracker/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker
+[1.309s] copying yolox/tracker/basetrack.py -> /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker
+[1.309s] running install
+[1.314s] running install_lib
+[1.327s] copying /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolov5_bytetrack_ros/tracker_node.py -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros
+[1.327s] creating /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox
+[1.327s] copying /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/__init__.py -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox
+[1.327s] creating /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker
+[1.328s] copying /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker/__init__.py -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker
+[1.328s] copying /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker
+[1.328s] copying /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker/matching.py -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker
+[1.328s] copying /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker
+[1.328s] copying /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolox/tracker/basetrack.py -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker
+[1.328s] byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros/tracker_node.py to tracker_node.cpython-310.pyc
+[1.329s] byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/__init__.py to __init__.cpython-310.pyc
+[1.329s] byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker/__init__.py to __init__.cpython-310.pyc
+[1.329s] byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker/kalman_filter.py to kalman_filter.cpython-310.pyc
+[1.330s] byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker/matching.py to matching.cpython-310.pyc
+[1.331s] byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker/byte_tracker.py to byte_tracker.cpython-310.pyc
+[1.333s] byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolox/tracker/basetrack.py to basetrack.cpython-310.pyc
+[1.333s] running install_data
+[1.333s] running install_egg_info
+[1.348s] removing '/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros-0.0.0-py3.10.egg-info' (and everything under it)
+[1.348s] Copying ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros-0.0.0-py3.10.egg-info
+[1.348s] running install_scripts
+[1.401s] Installing tello_image_publisher script to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/yolov5_bytetrack_ros
+[1.401s] Installing tello_video_subscriber script to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/yolov5_bytetrack_ros
+[1.401s] Installing tracker_node script to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/yolov5_bytetrack_ros
+[1.402s] writing list of installed files to '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/install.log'
+[1.450s] Invoked command in '/home/jf/tello_tracking_ws/src/yolov5_bytetrack_ros' returned '0': PYTHONPATH=/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolov5_bytetrack_ros build --build-base /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build install --record /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/install.log --single-version-externally-managed install_data

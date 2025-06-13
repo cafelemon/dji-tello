@@ -1,0 +1,3 @@
+# ninja log v5
+1	6017	1746389324560481034	/home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval/cocoeval.o	ea3eabd6c6039f4
+1	7071	1746389325605469955	/home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/vision.o	b80b4ffd37aa8331

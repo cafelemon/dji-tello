@@ -1,0 +1,30 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc -I/home/jf/.local/lib/python3.10/site-packages/torch/include -I/home/jf/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/jf/tello_tracking_ws/install/yolox/include -I/usr/include/python3.10 -c
+post_cflags = -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1016"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++17
+cuda_dlink_post_cflags = 
+sycl_dlink_post_cflags = 
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+
+
+
+
+build /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval/cocoeval.o: compile /home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval/cocoeval.cpp
+build /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/vision.o: compile /home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/vision.cpp
+
+
+
+
+
+
+
+

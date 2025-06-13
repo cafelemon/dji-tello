@@ -1,0 +1,767 @@
+[0.000000] (-) TimerEvent: {}
+[0.000180] (yolov5_bytetrack_ros) JobQueued: {'identifier': 'yolov5_bytetrack_ros', 'dependencies': OrderedDict()}
+[0.000206] (yolox) JobQueued: {'identifier': 'yolox', 'dependencies': OrderedDict()}
+[0.000227] (yolov5_bytetrack_ros) JobStarted: {'identifier': 'yolov5_bytetrack_ros'}
+[0.008660] (yolox) JobStarted: {'identifier': 'yolox'}
+[0.099353] (-) TimerEvent: {}
+[0.199848] (-) TimerEvent: {}
+[0.300272] (-) TimerEvent: {}
+[0.400721] (-) TimerEvent: {}
+[0.501130] (-) TimerEvent: {}
+[0.601555] (-) TimerEvent: {}
+[0.701992] (-) TimerEvent: {}
+[0.802424] (-) TimerEvent: {}
+[0.902891] (-) TimerEvent: {}
+[1.003694] (-) TimerEvent: {}
+[1.104026] (-) TimerEvent: {}
+[1.204461] (-) TimerEvent: {}
+[1.304921] (-) TimerEvent: {}
+[1.405450] (-) TimerEvent: {}
+[1.505921] (-) TimerEvent: {}
+[1.606355] (-) TimerEvent: {}
+[1.706799] (-) TimerEvent: {}
+[1.807178] (-) TimerEvent: {}
+[1.907531] (-) TimerEvent: {}
+[2.007951] (-) TimerEvent: {}
+[2.108338] (-) TimerEvent: {}
+[2.208973] (-) TimerEvent: {}
+[2.309412] (-) TimerEvent: {}
+[2.409881] (-) TimerEvent: {}
+[2.510288] (-) TimerEvent: {}
+[2.610612] (-) TimerEvent: {}
+[2.711395] (-) TimerEvent: {}
+[2.811758] (-) TimerEvent: {}
+[2.912103] (-) TimerEvent: {}
+[2.996585] (yolov5_bytetrack_ros) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/yolov5_bytetrack_ros', 'build', '--build-base', '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build', 'install', '--record', '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jf/tello_tracking_ws/src/yolov5_bytetrack_ros', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'jf', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jf', 'OLDPWD': '/home/jf/tello_tracking_ws/src/yolov5_bytetrack_ros/yolov5_bytetrack_ros', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'fr_FR.UTF-8', 'SYSTEMD_EXEC_PID': '1528', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/jf/tello_tracking_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'jf', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jf', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/jf/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jf-Lenovo-Legion-R7000P2020H:@/tmp/.ICE-unix/1506,unix/jf-Lenovo-Legion-R7000P2020H:/tmp/.ICE-unix/1506', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b1e86f8e_74be_47e9_b2d9_91e7aa5db620', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.147', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.012243] (-) TimerEvent: {}
+[3.112594] (-) TimerEvent: {}
+[3.212993] (-) TimerEvent: {}
+[3.313264] (-) TimerEvent: {}
+[3.348891] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running egg_info\n'}
+[3.349436] (yolov5_bytetrack_ros) StdoutLine: {'line': b'creating ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info\n'}
+[3.362163] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/PKG-INFO\n'}
+[3.362603] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing dependency_links to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/dependency_links.txt\n'}
+[3.362848] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing entry points to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/entry_points.txt\n'}
+[3.363016] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing requirements to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/requires.txt\n'}
+[3.363114] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing top-level names to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/top_level.txt\n'}
+[3.363243] (yolov5_bytetrack_ros) StdoutLine: {'line': b"writing manifest file '../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/SOURCES.txt'\n"}
+[3.398824] (yolov5_bytetrack_ros) StdoutLine: {'line': b"reading manifest file '../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/SOURCES.txt'\n"}
+[3.399419] (yolov5_bytetrack_ros) StdoutLine: {'line': b"writing manifest file '../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/SOURCES.txt'\n"}
+[3.399769] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running build\n'}
+[3.399940] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running build_py\n'}
+[3.400087] (yolov5_bytetrack_ros) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build\n'}
+[3.400269] (yolov5_bytetrack_ros) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib\n'}
+[3.400482] (yolov5_bytetrack_ros) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolov5_bytetrack_ros\n'}
+[3.400787] (yolov5_bytetrack_ros) StdoutLine: {'line': b'copying yolov5_bytetrack_ros/__init__.py -> /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolov5_bytetrack_ros\n'}
+[3.400939] (yolov5_bytetrack_ros) StdoutLine: {'line': b'copying yolov5_bytetrack_ros/tracker_node.py -> /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolov5_bytetrack_ros\n'}
+[3.401071] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install\n'}
+[3.404557] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install_lib\n'}
+[3.413413] (-) TimerEvent: {}
+[3.417572] (yolov5_bytetrack_ros) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros\n'}
+[3.417832] (yolov5_bytetrack_ros) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolov5_bytetrack_ros/__init__.py -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros\n'}
+[3.417948] (yolov5_bytetrack_ros) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build/lib/yolov5_bytetrack_ros/tracker_node.py -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros\n'}
+[3.418164] (yolov5_bytetrack_ros) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros/__init__.py to __init__.cpython-310.pyc\n'}
+[3.418399] (yolov5_bytetrack_ros) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros/tracker_node.py to tracker_node.cpython-310.pyc\n'}
+[3.418661] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install_data\n'}
+[3.418786] (yolov5_bytetrack_ros) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/share/ament_index\n'}
+[3.418843] (yolov5_bytetrack_ros) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/share/ament_index/resource_index\n'}
+[3.418936] (yolov5_bytetrack_ros) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/share/ament_index/resource_index/packages\n'}
+[3.418990] (yolov5_bytetrack_ros) StdoutLine: {'line': b'copying resource/yolov5_bytetrack_ros -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/share/ament_index/resource_index/packages\n'}
+[3.419041] (yolov5_bytetrack_ros) StdoutLine: {'line': b'copying package.xml -> /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/share/yolov5_bytetrack_ros\n'}
+[3.419130] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.432950] (yolov5_bytetrack_ros) StdoutLine: {'line': b'Copying ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros-0.0.0-py3.10.egg-info\n'}
+[3.433668] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install_scripts\n'}
+[3.486684] (yolov5_bytetrack_ros) StdoutLine: {'line': b'Installing tracker_node script to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/yolov5_bytetrack_ros\n'}
+[3.487013] (yolov5_bytetrack_ros) StdoutLine: {'line': b"writing list of installed files to '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/install.log'\n"}
+[3.513594] (-) TimerEvent: {}
+[3.540271] (yolov5_bytetrack_ros) CommandEnded: {'returncode': 0}
+[3.560550] (yolov5_bytetrack_ros) JobEnded: {'identifier': 'yolov5_bytetrack_ros', 'rc': 0}
+[3.613727] (-) TimerEvent: {}
+[3.714046] (-) TimerEvent: {}
+[3.814329] (-) TimerEvent: {}
+[3.914627] (-) TimerEvent: {}
+[4.014998] (-) TimerEvent: {}
+[4.115324] (-) TimerEvent: {}
+[4.215849] (-) TimerEvent: {}
+[4.316172] (-) TimerEvent: {}
+[4.416480] (-) TimerEvent: {}
+[4.516868] (-) TimerEvent: {}
+[4.617189] (-) TimerEvent: {}
+[4.717575] (-) TimerEvent: {}
+[4.817975] (-) TimerEvent: {}
+[4.842467] (yolox) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/yolox', 'build', '--build-base', '/home/jf/tello_tracking_ws/build/yolox/build', 'install', '--record', '/home/jf/tello_tracking_ws/build/yolox/install.log', '--single-version-externally-managed'], 'cwd': '/home/jf/tello_tracking_ws/src/ByteTrack', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'jf', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jf', 'OLDPWD': '/home/jf/tello_tracking_ws/src/yolov5_bytetrack_ros/yolov5_bytetrack_ros', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'fr_FR.UTF-8', 'SYSTEMD_EXEC_PID': '1528', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/jf/tello_tracking_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'jf', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jf', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/jf/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jf-Lenovo-Legion-R7000P2020H:@/tmp/.ICE-unix/1506,unix/jf-Lenovo-Legion-R7000P2020H:/tmp/.ICE-unix/1506', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b1e86f8e_74be_47e9_b2d9_91e7aa5db620', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.147', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jf/tello_tracking_ws/build/yolox', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jf/tello_tracking_ws/build/yolox/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[4.918112] (-) TimerEvent: {}
+[5.018534] (-) TimerEvent: {}
+[5.118965] (-) TimerEvent: {}
+[5.219424] (-) TimerEvent: {}
+[5.320087] (-) TimerEvent: {}
+[5.420521] (-) TimerEvent: {}
+[5.522695] (-) TimerEvent: {}
+[5.623000] (-) TimerEvent: {}
+[5.723384] (-) TimerEvent: {}
+[5.823749] (-) TimerEvent: {}
+[5.924335] (-) TimerEvent: {}
+[6.024749] (-) TimerEvent: {}
+[6.125174] (-) TimerEvent: {}
+[6.225574] (-) TimerEvent: {}
+[6.325995] (-) TimerEvent: {}
+[6.426379] (-) TimerEvent: {}
+[6.526757] (-) TimerEvent: {}
+[6.574681] (yolox) StdoutLine: {'line': b'running egg_info\n'}
+[6.575067] (yolox) StdoutLine: {'line': b'creating ../../build/yolox/yolox.egg-info\n'}
+[6.587248] (yolox) StdoutLine: {'line': b'writing ../../build/yolox/yolox.egg-info/PKG-INFO\n'}
+[6.587550] (yolox) StdoutLine: {'line': b'writing dependency_links to ../../build/yolox/yolox.egg-info/dependency_links.txt\n'}
+[6.587886] (yolox) StdoutLine: {'line': b'writing top-level names to ../../build/yolox/yolox.egg-info/top_level.txt\n'}
+[6.588106] (yolox) StdoutLine: {'line': b"writing manifest file '../../build/yolox/yolox.egg-info/SOURCES.txt'\n"}
+[6.621617] (yolox) StdoutLine: {'line': b"reading manifest file '../../build/yolox/yolox.egg-info/SOURCES.txt'\n"}
+[6.621973] (yolox) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[6.622919] (yolox) StdoutLine: {'line': b"writing manifest file '../../build/yolox/yolox.egg-info/SOURCES.txt'\n"}
+[6.623135] (yolox) StdoutLine: {'line': b'running build\n'}
+[6.623247] (yolox) StdoutLine: {'line': b'running build_py\n'}
+[6.623389] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build\n'}
+[6.623509] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310\n'}
+[6.623611] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.623740] (yolox) StdoutLine: {'line': b'copying tools/track_deepsort.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.623851] (yolox) StdoutLine: {'line': b'copying tools/convert_mot17_to_coco.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.624000] (yolox) StdoutLine: {'line': b'copying tools/mix_data_test_mot17.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.624117] (yolox) StdoutLine: {'line': b'copying tools/convert_video.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.624235] (yolox) StdoutLine: {'line': b'copying tools/convert_ethz_to_coco.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.624352] (yolox) StdoutLine: {'line': b'copying tools/mix_data_ablation.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.624469] (yolox) StdoutLine: {'line': b'copying tools/train.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.624589] (yolox) StdoutLine: {'line': b'copying tools/convert_mot20_to_coco.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.624735] (yolox) StdoutLine: {'line': b'copying tools/track_sort.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.624859] (yolox) StdoutLine: {'line': b'copying tools/convert_cityperson_to_coco.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.624995] (yolox) StdoutLine: {'line': b'copying tools/mota.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.625113] (yolox) StdoutLine: {'line': b'copying tools/track.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.625209] (yolox) StdoutLine: {'line': b'copying tools/mix_data_test_mot20.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.625305] (yolox) StdoutLine: {'line': b'copying tools/export_onnx.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.625398] (yolox) StdoutLine: {'line': b'copying tools/convert_crowdhuman_to_coco.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.625532] (yolox) StdoutLine: {'line': b'copying tools/interpolation.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.625694] (yolox) StdoutLine: {'line': b'copying tools/track_motdt.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.625811] (yolox) StdoutLine: {'line': b'copying tools/trt.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.625978] (yolox) StdoutLine: {'line': b'copying tools/demo_track.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.626086] (yolox) StdoutLine: {'line': b'copying tools/txt2video.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools\n'}
+[6.626207] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox\n'}
+[6.626350] (yolox) StdoutLine: {'line': b'copying yolox/__init__.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox\n'}
+[6.626481] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials\n'}
+[6.626625] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack\n'}
+[6.626751] (-) TimerEvent: {}
+[6.626897] (yolox) StdoutLine: {'line': b'copying tutorials/qdtrack/tracker_reid_motion.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack\n'}
+[6.627031] (yolox) StdoutLine: {'line': b'copying tutorials/qdtrack/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack\n'}
+[6.627216] (yolox) StdoutLine: {'line': b'copying tutorials/qdtrack/qdtrack.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack\n'}
+[6.627341] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack\n'}
+[6.627444] (yolox) StdoutLine: {'line': b'copying tutorials/transtrack/tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack\n'}
+[6.627586] (yolox) StdoutLine: {'line': b'copying tutorials/transtrack/engine_track.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack\n'}
+[6.627721] (yolox) StdoutLine: {'line': b'copying tutorials/transtrack/save_track.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack\n'}
+[6.627831] (yolox) StdoutLine: {'line': b'copying tutorials/transtrack/main_track.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack\n'}
+[6.628003] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack\n'}
+[6.628111] (yolox) StdoutLine: {'line': b'copying tutorials/centertrack/tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack\n'}
+[6.628241] (yolox) StdoutLine: {'line': b'copying tutorials/centertrack/opts.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack\n'}
+[6.628360] (yolox) StdoutLine: {'line': b'copying tutorials/centertrack/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack\n'}
+[6.628458] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker\n'}
+[6.628577] (yolox) StdoutLine: {'line': b'copying tutorials/ctracker/test_byte.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker\n'}
+[6.628722] (yolox) StdoutLine: {'line': b'copying tutorials/ctracker/eval_motchallenge.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker\n'}
+[6.628837] (yolox) StdoutLine: {'line': b'copying tutorials/ctracker/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker\n'}
+[6.628956] (yolox) StdoutLine: {'line': b'copying tutorials/ctracker/test.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker\n'}
+[6.629078] (yolox) StdoutLine: {'line': b'copying tutorials/ctracker/generate_half_csv.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker\n'}
+[6.629196] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr\n'}
+[6.629325] (yolox) StdoutLine: {'line': b'copying tutorials/motr/eval.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr\n'}
+[6.629442] (yolox) StdoutLine: {'line': b'copying tutorials/motr/joint.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr\n'}
+[6.629585] (yolox) StdoutLine: {'line': b'copying tutorials/motr/evaluation.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr\n'}
+[6.629727] (yolox) StdoutLine: {'line': b'copying tutorials/motr/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr\n'}
+[6.629838] (yolox) StdoutLine: {'line': b'copying tutorials/motr/motr_det.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr\n'}
+[6.629989] (yolox) StdoutLine: {'line': b'copying tutorials/motr/transforms.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr\n'}
+[6.630087] (yolox) StdoutLine: {'line': b'copying tutorials/motr/motr.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr\n'}
+[6.630208] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/jde\n'}
+[6.630344] (yolox) StdoutLine: {'line': b'copying tutorials/jde/tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/jde\n'}
+[6.630452] (yolox) StdoutLine: {'line': b'copying tutorials/jde/track_half.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/jde\n'}
+[6.630571] (yolox) StdoutLine: {'line': b'copying tutorials/jde/evaluation.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/jde\n'}
+[6.630709] (yolox) StdoutLine: {'line': b'copying tutorials/jde/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/jde\n'}
+[6.630823] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades\n'}
+[6.630941] (yolox) StdoutLine: {'line': b'copying tutorials/trades/tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades\n'}
+[6.631062] (yolox) StdoutLine: {'line': b'copying tutorials/trades/opts.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades\n'}
+[6.631176] (yolox) StdoutLine: {'line': b'copying tutorials/trades/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades\n'}
+[6.631297] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/cstrack\n'}
+[6.631414] (yolox) StdoutLine: {'line': b'copying tutorials/cstrack/tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/cstrack\n'}
+[6.631531] (yolox) StdoutLine: {'line': b'copying tutorials/cstrack/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/cstrack\n'}
+[6.631686] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/fairmot\n'}
+[6.631836] (yolox) StdoutLine: {'line': b'copying tutorials/fairmot/tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/fairmot\n'}
+[6.631958] (yolox) StdoutLine: {'line': b'copying tutorials/fairmot/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/fairmot\n'}
+[6.632056] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/mot_online\n'}
+[6.632156] (yolox) StdoutLine: {'line': b'copying tutorials/qdtrack/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/mot_online\n'}
+[6.632251] (yolox) StdoutLine: {'line': b'copying tutorials/qdtrack/mot_online/matching.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/mot_online\n'}
+[6.632353] (yolox) StdoutLine: {'line': b'copying tutorials/qdtrack/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/mot_online\n'}
+[6.632539] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/mot_online\n'}
+[6.632717] (yolox) StdoutLine: {'line': b'copying tutorials/transtrack/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/mot_online\n'}
+[6.632842] (yolox) StdoutLine: {'line': b'copying tutorials/transtrack/mot_online/matching.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/mot_online\n'}
+[6.632984] (yolox) StdoutLine: {'line': b'copying tutorials/transtrack/mot_online/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/mot_online\n'}
+[6.633101] (yolox) StdoutLine: {'line': b'copying tutorials/transtrack/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/mot_online\n'}
+[6.633218] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/mot_online\n'}
+[6.633384] (yolox) StdoutLine: {'line': b'copying tutorials/centertrack/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/mot_online\n'}
+[6.633504] (yolox) StdoutLine: {'line': b'copying tutorials/centertrack/mot_online/matching.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/mot_online\n'}
+[6.633623] (yolox) StdoutLine: {'line': b'copying tutorials/centertrack/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/mot_online\n'}
+[6.633801] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/mot_online\n'}
+[6.633918] (yolox) StdoutLine: {'line': b'copying tutorials/ctracker/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/mot_online\n'}
+[6.634116] (yolox) StdoutLine: {'line': b'copying tutorials/ctracker/mot_online/matching.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/mot_online\n'}
+[6.634236] (yolox) StdoutLine: {'line': b'copying tutorials/ctracker/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/mot_online\n'}
+[6.634390] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/mot_online\n'}
+[6.634499] (yolox) StdoutLine: {'line': b'copying tutorials/motr/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/mot_online\n'}
+[6.634614] (yolox) StdoutLine: {'line': b'copying tutorials/motr/mot_online/matching.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/mot_online\n'}
+[6.634762] (yolox) StdoutLine: {'line': b'copying tutorials/motr/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/mot_online\n'}
+[6.634883] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/mot_online\n'}
+[6.634998] (yolox) StdoutLine: {'line': b'copying tutorials/trades/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/mot_online\n'}
+[6.635163] (yolox) StdoutLine: {'line': b'copying tutorials/trades/mot_online/matching.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/mot_online\n'}
+[6.635283] (yolox) StdoutLine: {'line': b'copying tutorials/trades/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/mot_online\n'}
+[6.635426] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data\n'}
+[6.635543] (yolox) StdoutLine: {'line': b'copying yolox/data/__init__.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data\n'}
+[6.635738] (yolox) StdoutLine: {'line': b'copying yolox/data/samplers.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data\n'}
+[6.635867] (yolox) StdoutLine: {'line': b'copying yolox/data/data_augment.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data\n'}
+[6.635983] (yolox) StdoutLine: {'line': b'copying yolox/data/data_prefetcher.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data\n'}
+[6.636097] (yolox) StdoutLine: {'line': b'copying yolox/data/dataloading.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data\n'}
+[6.636214] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/core\n'}
+[6.636387] (yolox) StdoutLine: {'line': b'copying yolox/core/__init__.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/core\n'}
+[6.636520] (yolox) StdoutLine: {'line': b'copying yolox/core/trainer.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/core\n'}
+[6.636656] (yolox) StdoutLine: {'line': b'copying yolox/core/launch.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/core\n'}
+[6.636791] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/evaluators\n'}
+[6.636910] (yolox) StdoutLine: {'line': b'copying yolox/evaluators/__init__.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/evaluators\n'}
+[6.637025] (yolox) StdoutLine: {'line': b'copying yolox/evaluators/mot_evaluator.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/evaluators\n'}
+[6.637185] (yolox) StdoutLine: {'line': b'copying yolox/evaluators/evaluation.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/evaluators\n'}
+[6.637301] (yolox) StdoutLine: {'line': b'copying yolox/evaluators/coco_evaluator.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/evaluators\n'}
+[6.637485] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracker\n'}
+[6.637603] (yolox) StdoutLine: {'line': b'copying yolox/tracker/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracker\n'}
+[6.637747] (yolox) StdoutLine: {'line': b'copying yolox/tracker/matching.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracker\n'}
+[6.637873] (yolox) StdoutLine: {'line': b'copying yolox/tracker/byte_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracker\n'}
+[6.637985] (yolox) StdoutLine: {'line': b'copying yolox/tracker/basetrack.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracker\n'}
+[6.638168] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models\n'}
+[6.638286] (yolox) StdoutLine: {'line': b'copying yolox/models/yolo_pafpn.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models\n'}
+[6.638442] (yolox) StdoutLine: {'line': b'copying yolox/models/__init__.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models\n'}
+[6.638557] (yolox) StdoutLine: {'line': b'copying yolox/models/yolo_head.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models\n'}
+[6.638695] (yolox) StdoutLine: {'line': b'copying yolox/models/losses.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models\n'}
+[6.638820] (yolox) StdoutLine: {'line': b'copying yolox/models/darknet.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models\n'}
+[6.638937] (yolox) StdoutLine: {'line': b'copying yolox/models/network_blocks.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models\n'}
+[6.639111] (yolox) StdoutLine: {'line': b'copying yolox/models/yolo_fpn.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models\n'}
+[6.639222] (yolox) StdoutLine: {'line': b'copying yolox/models/yolox.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models\n'}
+[6.639333] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker\n'}
+[6.639447] (yolox) StdoutLine: {'line': b'copying yolox/motdt_tracker/motdt_tracker.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker\n'}
+[6.639565] (yolox) StdoutLine: {'line': b'copying yolox/motdt_tracker/reid_model.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker\n'}
+[6.639712] (yolox) StdoutLine: {'line': b'copying yolox/motdt_tracker/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker\n'}
+[6.639833] (yolox) StdoutLine: {'line': b'copying yolox/motdt_tracker/matching.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker\n'}
+[6.640041] (yolox) StdoutLine: {'line': b'copying yolox/motdt_tracker/basetrack.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker\n'}
+[6.640164] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.640283] (yolox) StdoutLine: {'line': b'copying yolox/utils/lr_scheduler.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.640465] (yolox) StdoutLine: {'line': b'copying yolox/utils/__init__.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.640583] (yolox) StdoutLine: {'line': b'copying yolox/utils/checkpoint.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.640721] (yolox) StdoutLine: {'line': b'copying yolox/utils/ema.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.640851] (yolox) StdoutLine: {'line': b'copying yolox/utils/logger.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.640967] (yolox) StdoutLine: {'line': b'copying yolox/utils/boxes.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.641083] (yolox) StdoutLine: {'line': b'copying yolox/utils/visualize.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.641198] (yolox) StdoutLine: {'line': b'copying yolox/utils/setup_env.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.641316] (yolox) StdoutLine: {'line': b'copying yolox/utils/demo_utils.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.641430] (yolox) StdoutLine: {'line': b'copying yolox/utils/allreduce_norm.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.641547] (yolox) StdoutLine: {'line': b'copying yolox/utils/metric.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.641685] (yolox) StdoutLine: {'line': b'copying yolox/utils/model_utils.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.641809] (yolox) StdoutLine: {'line': b'copying yolox/utils/dist.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils\n'}
+[6.641927] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker\n'}
+[6.642040] (yolox) StdoutLine: {'line': b'copying yolox/deepsort_tracker/reid_model.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker\n'}
+[6.642254] (yolox) StdoutLine: {'line': b'copying yolox/deepsort_tracker/kalman_filter.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker\n'}
+[6.642359] (yolox) StdoutLine: {'line': b'copying yolox/deepsort_tracker/detection.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker\n'}
+[6.642462] (yolox) StdoutLine: {'line': b'copying yolox/deepsort_tracker/iou_matching.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker\n'}
+[6.642564] (yolox) StdoutLine: {'line': b'copying yolox/deepsort_tracker/linear_assignment.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker\n'}
+[6.642692] (yolox) StdoutLine: {'line': b'copying yolox/deepsort_tracker/track.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker\n'}
+[6.642805] (yolox) StdoutLine: {'line': b'copying yolox/deepsort_tracker/deepsort.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker\n'}
+[6.642906] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracking_utils\n'}
+[6.643010] (yolox) StdoutLine: {'line': b'copying yolox/tracking_utils/timer.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracking_utils\n'}
+[6.643113] (yolox) StdoutLine: {'line': b'copying yolox/tracking_utils/io.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracking_utils\n'}
+[6.643214] (yolox) StdoutLine: {'line': b'copying yolox/tracking_utils/evaluation.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracking_utils\n'}
+[6.643328] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/sort_tracker\n'}
+[6.643429] (yolox) StdoutLine: {'line': b'copying yolox/sort_tracker/sort.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/sort_tracker\n'}
+[6.643535] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/layers\n'}
+[6.643652] (yolox) StdoutLine: {'line': b'copying yolox/layers/__init__.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/layers\n'}
+[6.643772] (yolox) StdoutLine: {'line': b'copying yolox/layers/fast_coco_eval_api.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/layers\n'}
+[6.643892] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/exp\n'}
+[6.643993] (yolox) StdoutLine: {'line': b'copying yolox/exp/__init__.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/exp\n'}
+[6.644096] (yolox) StdoutLine: {'line': b'copying yolox/exp/yolox_base.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/exp\n'}
+[6.644199] (yolox) StdoutLine: {'line': b'copying yolox/exp/build.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/exp\n'}
+[6.644299] (yolox) StdoutLine: {'line': b'copying yolox/exp/base_exp.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/exp\n'}
+[6.644401] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/datasets\n'}
+[6.644503] (yolox) StdoutLine: {'line': b'copying yolox/data/datasets/__init__.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/datasets\n'}
+[6.644609] (yolox) StdoutLine: {'line': b'copying yolox/data/datasets/mosaicdetection.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/datasets\n'}
+[6.644735] (yolox) StdoutLine: {'line': b'copying yolox/data/datasets/datasets_wrapper.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/datasets\n'}
+[6.644844] (yolox) StdoutLine: {'line': b'copying yolox/data/datasets/mot.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/datasets\n'}
+[6.644948] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps\n'}
+[6.645051] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default\n'}
+[6.645153] (yolox) StdoutLine: {'line': b'copying exps/default/yolox_m.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default\n'}
+[6.645255] (yolox) StdoutLine: {'line': b'copying exps/default/nano.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default\n'}
+[6.645355] (yolox) StdoutLine: {'line': b'copying exps/default/yolox_l.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default\n'}
+[6.645467] (yolox) StdoutLine: {'line': b'copying exps/default/yolox_tiny.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default\n'}
+[6.645584] (yolox) StdoutLine: {'line': b'copying exps/default/yolov3.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default\n'}
+[6.645740] (yolox) StdoutLine: {'line': b'copying exps/default/yolox_x.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default\n'}
+[6.645850] (yolox) StdoutLine: {'line': b'copying exps/default/yolox_s.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default\n'}
+[6.645951] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example\n'}
+[6.646069] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.646168] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_x_ablation.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.646272] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_x_mix_det.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.646376] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_nano_mix_det.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.646480] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_m_mix_det.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.646583] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_s_mix_det.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.646719] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_l_mix_det.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.646831] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_tiny_mix_det.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.646935] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_x_mix_mot20_ch.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.647036] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_x_ch.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.647140] (yolox) StdoutLine: {'line': b'copying exps/example/mot/yolox_x_mot17_half.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot\n'}
+[6.647243] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/deploy\n'}
+[6.647346] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/deploy/ONNXRuntime\n'}
+[6.647446] (yolox) StdoutLine: {'line': b'copying deploy/ONNXRuntime/onnx_inference.py -> /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/deploy/ONNXRuntime\n'}
+[6.647569] (yolox) StdoutLine: {'line': b'running build_ext\n'}
+[6.650073] (yolox) StdoutLine: {'line': b"building 'yolox._C' extension\n"}
+[6.650250] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310\n'}
+[6.650538] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home\n'}
+[6.650716] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf\n'}
+[6.650864] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws\n'}
+[6.650996] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src\n'}
+[6.651127] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack\n'}
+[6.651259] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox\n'}
+[6.651390] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers\n'}
+[6.651521] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc\n'}
+[6.651705] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval\n'}
+[6.655724] (yolox) StderrLine: {'line': b'Emitting ninja build file /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/build.ninja...\n'}
+[6.655987] (yolox) StderrLine: {'line': b'Compiling objects...\n'}
+[6.656157] (yolox) StderrLine: {'line': b'Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)\n'}
+[6.727088] (-) TimerEvent: {}
+[6.827449] (-) TimerEvent: {}
+[6.928023] (-) TimerEvent: {}
+[7.028699] (-) TimerEvent: {}
+[7.129230] (-) TimerEvent: {}
+[7.229845] (-) TimerEvent: {}
+[7.330381] (-) TimerEvent: {}
+[7.430925] (-) TimerEvent: {}
+[7.531665] (-) TimerEvent: {}
+[7.632024] (-) TimerEvent: {}
+[7.732560] (-) TimerEvent: {}
+[7.833181] (-) TimerEvent: {}
+[7.933718] (-) TimerEvent: {}
+[8.034334] (-) TimerEvent: {}
+[8.134693] (-) TimerEvent: {}
+[8.235235] (-) TimerEvent: {}
+[8.335569] (-) TimerEvent: {}
+[8.436197] (-) TimerEvent: {}
+[8.536533] (-) TimerEvent: {}
+[8.637091] (-) TimerEvent: {}
+[8.737428] (-) TimerEvent: {}
+[8.838077] (-) TimerEvent: {}
+[8.938405] (-) TimerEvent: {}
+[9.038736] (-) TimerEvent: {}
+[9.139263] (-) TimerEvent: {}
+[9.239602] (-) TimerEvent: {}
+[9.340099] (-) TimerEvent: {}
+[9.440454] (-) TimerEvent: {}
+[9.540819] (-) TimerEvent: {}
+[9.641175] (-) TimerEvent: {}
+[9.741896] (-) TimerEvent: {}
+[9.842224] (-) TimerEvent: {}
+[9.942758] (-) TimerEvent: {}
+[10.043098] (-) TimerEvent: {}
+[10.143690] (-) TimerEvent: {}
+[10.244018] (-) TimerEvent: {}
+[10.344551] (-) TimerEvent: {}
+[10.445261] (-) TimerEvent: {}
+[10.545802] (-) TimerEvent: {}
+[10.646495] (-) TimerEvent: {}
+[10.747052] (-) TimerEvent: {}
+[10.847686] (-) TimerEvent: {}
+[10.948226] (-) TimerEvent: {}
+[11.048747] (-) TimerEvent: {}
+[11.149322] (-) TimerEvent: {}
+[11.249737] (-) TimerEvent: {}
+[11.350089] (-) TimerEvent: {}
+[11.450430] (-) TimerEvent: {}
+[11.550772] (-) TimerEvent: {}
+[11.651121] (-) TimerEvent: {}
+[11.751482] (-) TimerEvent: {}
+[11.851856] (-) TimerEvent: {}
+[11.952210] (-) TimerEvent: {}
+[12.052582] (-) TimerEvent: {}
+[12.152952] (-) TimerEvent: {}
+[12.253332] (-) TimerEvent: {}
+[12.353919] (-) TimerEvent: {}
+[12.454444] (-) TimerEvent: {}
+[12.555089] (-) TimerEvent: {}
+[12.655677] (-) TimerEvent: {}
+[12.675382] (yolox) StdoutLine: {'line': b'[1/2] c++ -MMD -MF /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval/cocoeval.o.d -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc -I/home/jf/.local/lib/python3.10/site-packages/torch/include -I/home/jf/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/jf/tello_tracking_ws/install/yolox/include -I/usr/include/python3.10 -c -c /home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval/cocoeval.cpp -o /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval/cocoeval.o -O3 -DTORCH_API_INCLUDE_EXTENSION_H \'-DPYBIND11_COMPILER_TYPE="_gcc"\' \'-DPYBIND11_STDLIB="_libstdcpp"\' \'-DPYBIND11_BUILD_ABI="_cxxabi1016"\' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++17\n'}
+[12.755803] (-) TimerEvent: {}
+[12.856135] (-) TimerEvent: {}
+[12.956517] (-) TimerEvent: {}
+[13.056876] (-) TimerEvent: {}
+[13.157218] (-) TimerEvent: {}
+[13.257579] (-) TimerEvent: {}
+[13.357961] (-) TimerEvent: {}
+[13.458324] (-) TimerEvent: {}
+[13.558747] (-) TimerEvent: {}
+[13.659133] (-) TimerEvent: {}
+[13.729128] (yolox) StdoutLine: {'line': b'[2/2] c++ -MMD -MF /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/vision.o.d -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc -I/home/jf/.local/lib/python3.10/site-packages/torch/include -I/home/jf/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/jf/tello_tracking_ws/install/yolox/include -I/usr/include/python3.10 -c -c /home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/vision.cpp -o /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/vision.o -O3 -DTORCH_API_INCLUDE_EXTENSION_H \'-DPYBIND11_COMPILER_TYPE="_gcc"\' \'-DPYBIND11_STDLIB="_libstdcpp"\' \'-DPYBIND11_BUILD_ABI="_cxxabi1016"\' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++17\n'}
+[13.730233] (yolox) StdoutLine: {'line': b'x86_64-linux-gnu-g++ -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval/cocoeval.o /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/vision.o -L/home/jf/.local/lib/python3.10/site-packages/torch/lib -L/usr/lib/x86_64-linux-gnu -lc10 -ltorch -ltorch_cpu -ltorch_python -o /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/_C.cpython-310-x86_64-linux-gnu.so\n'}
+[13.759289] (-) TimerEvent: {}
+[13.859700] (-) TimerEvent: {}
+[13.960089] (-) TimerEvent: {}
+[14.060462] (-) TimerEvent: {}
+[14.073057] (yolox) StdoutLine: {'line': b'running install\n'}
+[14.077626] (yolox) StdoutLine: {'line': b'running install_lib\n'}
+[14.090545] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.090817] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/track_deepsort.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.091093] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/convert_mot17_to_coco.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.091247] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/mix_data_test_mot17.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.091520] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/convert_video.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.091737] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/convert_ethz_to_coco.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.091897] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/mix_data_ablation.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.092066] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/train.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.092250] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/convert_mot20_to_coco.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.092436] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/track_sort.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.092605] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/convert_cityperson_to_coco.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.092836] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/mota.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.093034] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/track.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.093179] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/mix_data_test_mot20.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.093406] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/export_onnx.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.093607] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/convert_crowdhuman_to_coco.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.093789] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/interpolation.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.093991] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/track_motdt.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.094184] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/trt.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.094353] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/demo_track.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.094551] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tools/txt2video.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools\n'}
+[14.094772] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials\n'}
+[14.094976] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack\n'}
+[14.095124] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/tracker_reid_motion.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack\n'}
+[14.095355] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/mot_online\n'}
+[14.095544] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/mot_online\n'}
+[14.095741] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/mot_online/matching.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/mot_online\n'}
+[14.095897] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/mot_online\n'}
+[14.096042] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack\n'}
+[14.096294] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/qdtrack/qdtrack.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack\n'}
+[14.096518] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack\n'}
+[14.096679] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack\n'}
+[14.096844] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/engine_track.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack\n'}
+[14.097050] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/mot_online\n'}
+[14.097197] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/mot_online\n'}
+[14.097517] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/mot_online/matching.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/mot_online\n'}
+[14.097708] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/mot_online/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/mot_online\n'}
+[14.097865] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/mot_online\n'}
+[14.098013] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/save_track.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack\n'}
+[14.098159] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/transtrack/main_track.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack\n'}
+[14.098302] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack\n'}
+[14.098529] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack\n'}
+[14.098687] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/opts.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack\n'}
+[14.098850] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/mot_online\n'}
+[14.099007] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/mot_online\n'}
+[14.099230] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/mot_online/matching.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/mot_online\n'}
+[14.099498] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/mot_online\n'}
+[14.099732] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/centertrack/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack\n'}
+[14.099973] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker\n'}
+[14.100202] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/mot_online\n'}
+[14.100349] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/mot_online\n'}
+[14.100496] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/mot_online/matching.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/mot_online\n'}
+[14.100657] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/mot_online\n'}
+[14.100823] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/test_byte.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker\n'}
+[14.100970] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/eval_motchallenge.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker\n'}
+[14.101210] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker\n'}
+[14.101413] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/test.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker\n'}
+[14.101602] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/ctracker/generate_half_csv.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker\n'}
+[14.101775] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr\n'}
+[14.101926] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/eval.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr\n'}
+[14.102126] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/joint.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr\n'}
+[14.102272] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/mot_online\n'}
+[14.102475] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/mot_online\n'}
+[14.102716] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/mot_online/matching.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/mot_online\n'}
+[14.102876] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/mot_online\n'}
+[14.103031] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/evaluation.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr\n'}
+[14.103219] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr\n'}
+[14.103351] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/motr_det.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr\n'}
+[14.103483] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/transforms.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr\n'}
+[14.103654] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/motr/motr.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr\n'}
+[14.103813] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/jde\n'}
+[14.103946] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/jde/tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/jde\n'}
+[14.104076] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/jde/track_half.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/jde\n'}
+[14.104206] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/jde/evaluation.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/jde\n'}
+[14.104334] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/jde/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/jde\n'}
+[14.104467] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades\n'}
+[14.104596] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades\n'}
+[14.104764] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/opts.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades\n'}
+[14.104901] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/mot_online\n'}
+[14.105031] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/mot_online/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/mot_online\n'}
+[14.105162] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/mot_online/matching.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/mot_online\n'}
+[14.105307] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/mot_online/basetrack.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/mot_online\n'}
+[14.105440] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/trades/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades\n'}
+[14.105571] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/cstrack\n'}
+[14.105731] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/cstrack/tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/cstrack\n'}
+[14.105871] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/cstrack/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/cstrack\n'}
+[14.106003] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/fairmot\n'}
+[14.106131] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/fairmot/tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/fairmot\n'}
+[14.106275] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/tutorials/fairmot/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/fairmot\n'}
+[14.106418] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox\n'}
+[14.106546] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/__init__.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox\n'}
+[14.106713] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data\n'}
+[14.106868] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/__init__.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data\n'}
+[14.107000] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/samplers.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data\n'}
+[14.107132] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/data_augment.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data\n'}
+[14.107262] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/datasets\n'}
+[14.107392] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/datasets/__init__.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/datasets\n'}
+[14.107521] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/datasets/mosaicdetection.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/datasets\n'}
+[14.107668] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/datasets/datasets_wrapper.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/datasets\n'}
+[14.107822] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/datasets/mot.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/datasets\n'}
+[14.107968] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/data_prefetcher.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data\n'}
+[14.108099] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/data/dataloading.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data\n'}
+[14.108234] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/core\n'}
+[14.108379] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/core/__init__.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/core\n'}
+[14.108550] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/core/trainer.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/core\n'}
+[14.108883] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/core/launch.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/core\n'}
+[14.109041] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/evaluators\n'}
+[14.109186] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/evaluators/__init__.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/evaluators\n'}
+[14.109330] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/evaluators/mot_evaluator.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/evaluators\n'}
+[14.109475] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/evaluators/evaluation.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/evaluators\n'}
+[14.109619] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/evaluators/coco_evaluator.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/evaluators\n'}
+[14.109843] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracker\n'}
+[14.109994] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracker/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracker\n'}
+[14.110290] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracker/matching.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracker\n'}
+[14.110461] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracker/byte_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracker\n'}
+[14.110650] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracker/basetrack.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracker\n'}
+[14.110818] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models\n'}
+[14.110963] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models/yolo_pafpn.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models\n'}
+[14.111201] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models/__init__.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models\n'}
+[14.111337] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models/yolo_head.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models\n'}
+[14.111551] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models/losses.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models\n'}
+[14.111753] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models/darknet.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models\n'}
+[14.111907] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models/network_blocks.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models\n'}
+[14.112053] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models/yolo_fpn.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models\n'}
+[14.112197] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/models/yolox.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models\n'}
+[14.112342] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker\n'}
+[14.112484] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker/motdt_tracker.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker\n'}
+[14.112703] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker/reid_model.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker\n'}
+[14.112859] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker\n'}
+[14.112991] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker/matching.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker\n'}
+[14.113123] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/motdt_tracker/basetrack.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker\n'}
+[14.113253] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.113384] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/lr_scheduler.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.113515] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/__init__.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.113675] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/checkpoint.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.113893] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/ema.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.114039] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/logger.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.114171] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/boxes.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.114302] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/visualize.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.114433] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/setup_env.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.114564] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/demo_utils.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.114757] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/allreduce_norm.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.114909] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/metric.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.115053] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/model_utils.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.115197] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/utils/dist.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils\n'}
+[14.115341] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/_C.cpython-310-x86_64-linux-gnu.so -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox\n'}
+[14.115485] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker\n'}
+[14.115628] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker/reid_model.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker\n'}
+[14.115811] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker/kalman_filter.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker\n'}
+[14.115957] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker/detection.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker\n'}
+[14.116101] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker/iou_matching.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker\n'}
+[14.116245] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker/linear_assignment.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker\n'}
+[14.116390] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker/track.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker\n'}
+[14.116648] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/deepsort_tracker/deepsort.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker\n'}
+[14.116830] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracking_utils\n'}
+[14.116973] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracking_utils/timer.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracking_utils\n'}
+[14.117103] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracking_utils/io.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracking_utils\n'}
+[14.117245] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/tracking_utils/evaluation.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracking_utils\n'}
+[14.117377] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/sort_tracker\n'}
+[14.117506] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/sort_tracker/sort.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/sort_tracker\n'}
+[14.117703] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/layers\n'}
+[14.117859] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/layers/__init__.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/layers\n'}
+[14.118002] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/layers/fast_coco_eval_api.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/layers\n'}
+[14.118138] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/exp\n'}
+[14.118270] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/exp/__init__.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/exp\n'}
+[14.118400] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/exp/yolox_base.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/exp\n'}
+[14.118580] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/exp/build.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/exp\n'}
+[14.118893] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/exp/base_exp.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/exp\n'}
+[14.119111] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps\n'}
+[14.119382] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example\n'}
+[14.119549] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.119714] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_x_ablation.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.119939] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_x_mix_det.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.120072] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_nano_mix_det.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.120204] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_m_mix_det.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.120335] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_s_mix_det.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.120465] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_l_mix_det.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.120609] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_tiny_mix_det.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.120776] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_x_mix_mot20_ch.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.120924] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_x_ch.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.121077] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/example/mot/yolox_x_mot17_half.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot\n'}
+[14.121222] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default\n'}
+[14.121365] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default/yolox_m.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default\n'}
+[14.121564] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default/nano.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default\n'}
+[14.121725] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default/yolox_l.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default\n'}
+[14.121902] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default/yolox_tiny.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default\n'}
+[14.122034] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default/yolov3.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default\n'}
+[14.122164] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default/yolox_x.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default\n'}
+[14.122310] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/exps/default/yolox_s.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default\n'}
+[14.122490] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/deploy\n'}
+[14.122622] (yolox) StdoutLine: {'line': b'creating /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/deploy/ONNXRuntime\n'}
+[14.122794] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/deploy/ONNXRuntime/onnx_inference.py -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/deploy/ONNXRuntime\n'}
+[14.122932] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/track_deepsort.py to track_deepsort.cpython-310.pyc\n'}
+[14.123130] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/convert_mot17_to_coco.py to convert_mot17_to_coco.cpython-310.pyc\n'}
+[14.123263] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/mix_data_test_mot17.py to mix_data_test_mot17.cpython-310.pyc\n'}
+[14.123395] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/convert_video.py to convert_video.cpython-310.pyc\n'}
+[14.123525] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/convert_ethz_to_coco.py to convert_ethz_to_coco.cpython-310.pyc\n'}
+[14.123676] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/mix_data_ablation.py to mix_data_ablation.cpython-310.pyc\n'}
+[14.123833] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/train.py to train.cpython-310.pyc\n'}
+[14.123965] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/convert_mot20_to_coco.py to convert_mot20_to_coco.cpython-310.pyc\n'}
+[14.124096] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/track_sort.py to track_sort.cpython-310.pyc\n'}
+[14.124309] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/convert_cityperson_to_coco.py to convert_cityperson_to_coco.cpython-310.pyc\n'}
+[14.124443] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/mota.py to mota.cpython-310.pyc\n'}
+[14.124573] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/track.py to track.cpython-310.pyc\n'}
+[14.124749] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/mix_data_test_mot20.py to mix_data_test_mot20.cpython-310.pyc\n'}
+[14.124974] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/export_onnx.py to export_onnx.cpython-310.pyc\n'}
+[14.125118] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/convert_crowdhuman_to_coco.py to convert_crowdhuman_to_coco.cpython-310.pyc\n'}
+[14.125249] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/interpolation.py to interpolation.cpython-310.pyc\n'}
+[14.125384] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/track_motdt.py to track_motdt.cpython-310.pyc\n'}
+[14.125514] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/trt.py to trt.cpython-310.pyc\n'}
+[14.125664] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/demo_track.py to demo_track.cpython-310.pyc\n'}
+[14.126401] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tools/txt2video.py to txt2video.cpython-310.pyc\n'}
+[14.127348] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/tracker_reid_motion.py to tracker_reid_motion.cpython-310.pyc\n'}
+[14.129225] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/mot_online/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[14.129894] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/mot_online/matching.py to matching.cpython-310.pyc\n'}
+[14.131023] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/mot_online/basetrack.py to basetrack.cpython-310.pyc\n'}
+[14.131350] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.132798] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/qdtrack/qdtrack.py to qdtrack.cpython-310.pyc\n'}
+[14.133425] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/tracker.py to tracker.cpython-310.pyc\n'}
+[14.134425] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/engine_track.py to engine_track.cpython-310.pyc\n'}
+[14.136135] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/mot_online/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[14.136816] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/mot_online/matching.py to matching.cpython-310.pyc\n'}
+[14.137695] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/mot_online/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.139385] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/mot_online/basetrack.py to basetrack.cpython-310.pyc\n'}
+[14.139611] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/save_track.py to save_track.cpython-310.pyc\n'}
+[14.139903] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/transtrack/main_track.py to main_track.cpython-310.pyc\n'}
+[14.141689] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/tracker.py to tracker.cpython-310.pyc\n'}
+[14.142951] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/opts.py to opts.cpython-310.pyc\n'}
+[14.145088] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/mot_online/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[14.145776] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/mot_online/matching.py to matching.cpython-310.pyc\n'}
+[14.146899] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/mot_online/basetrack.py to basetrack.cpython-310.pyc\n'}
+[14.147198] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/centertrack/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.148824] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/mot_online/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[14.149592] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/mot_online/matching.py to matching.cpython-310.pyc\n'}
+[14.150722] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/mot_online/basetrack.py to basetrack.cpython-310.pyc\n'}
+[14.151018] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/test_byte.py to test_byte.cpython-310.pyc\n'}
+[14.151907] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/eval_motchallenge.py to eval_motchallenge.cpython-310.pyc\n'}
+[14.152511] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.153940] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/test.py to test.cpython-310.pyc\n'}
+[14.155833] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/ctracker/generate_half_csv.py to generate_half_csv.cpython-310.pyc\n'}
+[14.156244] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/eval.py to eval.cpython-310.pyc\n'}
+[14.158920] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/joint.py to joint.cpython-310.pyc\n'}
+[14.160361] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/mot_online/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[14.160538] (-) TimerEvent: {}
+[14.161203] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/mot_online/matching.py to matching.cpython-310.pyc\n'}
+[14.162344] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/mot_online/basetrack.py to basetrack.cpython-310.pyc\n'}
+[14.162664] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/evaluation.py to evaluation.cpython-310.pyc\n'}
+[14.163510] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.164955] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/motr_det.py to motr_det.cpython-310.pyc\n'}
+[14.168169] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/transforms.py to transforms.cpython-310.pyc\n'}
+[14.171424] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/motr/motr.py to motr.cpython-310.pyc\n'}
+[14.174342] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/jde/tracker.py to tracker.cpython-310.pyc\n'}
+[14.176223] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/jde/track_half.py to track_half.cpython-310.pyc\n'}
+[14.177136] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/jde/evaluation.py to evaluation.cpython-310.pyc\n'}
+[14.177720] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/jde/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.179365] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/tracker.py to tracker.cpython-310.pyc\n'}
+[14.181169] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/opts.py to opts.cpython-310.pyc\n'}
+[14.183387] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/mot_online/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[14.184095] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/mot_online/matching.py to matching.cpython-310.pyc\n'}
+[14.185243] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/mot_online/basetrack.py to basetrack.cpython-310.pyc\n'}
+[14.185551] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/trades/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.187148] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/cstrack/tracker.py to tracker.cpython-310.pyc\n'}
+[14.190241] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/cstrack/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.192786] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/fairmot/tracker.py to tracker.cpython-310.pyc\n'}
+[14.195028] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/tutorials/fairmot/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.196780] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/__init__.py to __init__.cpython-310.pyc\n'}
+[14.197118] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/__init__.py to __init__.cpython-310.pyc\n'}
+[14.197283] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/samplers.py to samplers.cpython-310.pyc\n'}
+[14.197506] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/data_augment.py to data_augment.cpython-310.pyc\n'}
+[14.198967] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/datasets/__init__.py to __init__.cpython-310.pyc\n'}
+[14.199274] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/datasets/mosaicdetection.py to mosaicdetection.cpython-310.pyc\n'}
+[14.200343] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/datasets/datasets_wrapper.py to datasets_wrapper.cpython-310.pyc\n'}
+[14.200865] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/datasets/mot.py to mot.cpython-310.pyc\n'}
+[14.201470] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/data_prefetcher.py to data_prefetcher.cpython-310.pyc\n'}
+[14.201886] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/data/dataloading.py to dataloading.cpython-310.pyc\n'}
+[14.202374] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/core/__init__.py to __init__.cpython-310.pyc\n'}
+[14.202696] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/core/trainer.py to trainer.cpython-310.pyc\n'}
+[14.203733] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/core/launch.py to launch.cpython-310.pyc\n'}
+[14.204382] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/evaluators/__init__.py to __init__.cpython-310.pyc\n'}
+[14.204704] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/evaluators/mot_evaluator.py to mot_evaluator.cpython-310.pyc\n'}
+[14.207083] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/evaluators/evaluation.py to evaluation.cpython-310.pyc\n'}
+[14.207883] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/evaluators/coco_evaluator.py to coco_evaluator.cpython-310.pyc\n'}
+[14.208797] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracker/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[14.209449] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracker/matching.py to matching.cpython-310.pyc\n'}
+[14.210428] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracker/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[14.211896] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracker/basetrack.py to basetrack.cpython-310.pyc\n'}
+[14.212197] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models/yolo_pafpn.py to yolo_pafpn.cpython-310.pyc\n'}
+[14.212781] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models/__init__.py to __init__.cpython-310.pyc\n'}
+[14.213057] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models/yolo_head.py to yolo_head.cpython-310.pyc\n'}
+[14.215345] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models/losses.py to losses.cpython-310.pyc\n'}
+[14.215750] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models/darknet.py to darknet.cpython-310.pyc\n'}
+[14.216492] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models/network_blocks.py to network_blocks.cpython-310.pyc\n'}
+[14.217416] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models/yolo_fpn.py to yolo_fpn.cpython-310.pyc\n'}
+[14.217875] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/models/yolox.py to yolox.cpython-310.pyc\n'}
+[14.218210] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker/motdt_tracker.py to motdt_tracker.cpython-310.pyc\n'}
+[14.219774] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker/reid_model.py to reid_model.cpython-310.pyc\n'}
+[14.220972] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[14.221692] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker/matching.py to matching.cpython-310.pyc\n'}
+[14.222331] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/motdt_tracker/basetrack.py to basetrack.cpython-310.pyc\n'}
+[14.222689] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/lr_scheduler.py to lr_scheduler.cpython-310.pyc\n'}
+[14.223283] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/__init__.py to __init__.cpython-310.pyc\n'}
+[14.223607] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/checkpoint.py to checkpoint.cpython-310.pyc\n'}
+[14.223801] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/ema.py to ema.cpython-310.pyc\n'}
+[14.224056] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/logger.py to logger.cpython-310.pyc\n'}
+[14.224423] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/boxes.py to boxes.cpython-310.pyc\n'}
+[14.225255] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/visualize.py to visualize.cpython-310.pyc\n'}
+[14.226075] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/setup_env.py to setup_env.cpython-310.pyc\n'}
+[14.226386] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/demo_utils.py to demo_utils.cpython-310.pyc\n'}
+[14.226883] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/allreduce_norm.py to allreduce_norm.cpython-310.pyc\n'}
+[14.227372] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/metric.py to metric.cpython-310.pyc\n'}
+[14.227952] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/model_utils.py to model_utils.cpython-310.pyc\n'}
+[14.228419] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/utils/dist.py to dist.cpython-310.pyc\n'}
+[14.229265] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker/reid_model.py to reid_model.cpython-310.pyc\n'}
+[14.230057] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[14.230647] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker/detection.py to detection.cpython-310.pyc\n'}
+[14.230951] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker/iou_matching.py to iou_matching.cpython-310.pyc\n'}
+[14.231256] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker/linear_assignment.py to linear_assignment.cpython-310.pyc\n'}
+[14.231751] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker/track.py to track.cpython-310.pyc\n'}
+[14.232210] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/deepsort_tracker/deepsort.py to deepsort.cpython-310.pyc\n'}
+[14.233721] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracking_utils/timer.py to timer.cpython-310.pyc\n'}
+[14.234050] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracking_utils/io.py to io.cpython-310.pyc\n'}
+[14.234561] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/tracking_utils/evaluation.py to evaluation.cpython-310.pyc\n'}
+[14.235134] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/sort_tracker/sort.py to sort.cpython-310.pyc\n'}
+[14.236581] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/layers/__init__.py to __init__.cpython-310.pyc\n'}
+[14.236826] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/layers/fast_coco_eval_api.py to fast_coco_eval_api.cpython-310.pyc\n'}
+[14.237250] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/exp/__init__.py to __init__.cpython-310.pyc\n'}
+[14.237570] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/exp/yolox_base.py to yolox_base.cpython-310.pyc\n'}
+[14.238411] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/exp/build.py to build.cpython-310.pyc\n'}
+[14.238778] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox/exp/base_exp.py to base_exp.cpython-310.pyc\n'}
+[14.239068] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_x_ablation.py to yolox_x_ablation.cpython-310.pyc\n'}
+[14.239716] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_x_mix_det.py to yolox_x_mix_det.cpython-310.pyc\n'}
+[14.240201] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_nano_mix_det.py to yolox_nano_mix_det.cpython-310.pyc\n'}
+[14.240916] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_m_mix_det.py to yolox_m_mix_det.cpython-310.pyc\n'}
+[14.241451] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_s_mix_det.py to yolox_s_mix_det.cpython-310.pyc\n'}
+[14.241992] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_l_mix_det.py to yolox_l_mix_det.cpython-310.pyc\n'}
+[14.242512] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_tiny_mix_det.py to yolox_tiny_mix_det.cpython-310.pyc\n'}
+[14.243073] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_x_mix_mot20_ch.py to yolox_x_mix_mot20_ch.cpython-310.pyc\n'}
+[14.243544] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_x_ch.py to yolox_x_ch.cpython-310.pyc\n'}
+[14.244110] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/example/mot/yolox_x_mot17_half.py to yolox_x_mot17_half.cpython-310.pyc\n'}
+[14.244583] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default/yolox_m.py to yolox_m.cpython-310.pyc\n'}
+[14.244878] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default/nano.py to nano.cpython-310.pyc\n'}
+[14.245204] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default/yolox_l.py to yolox_l.cpython-310.pyc\n'}
+[14.245553] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default/yolox_tiny.py to yolox_tiny.cpython-310.pyc\n'}
+[14.245751] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default/yolov3.py to yolov3.cpython-310.pyc\n'}
+[14.246057] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default/yolox_x.py to yolox_x.cpython-310.pyc\n'}
+[14.246318] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/exps/default/yolox_s.py to yolox_s.cpython-310.pyc\n'}
+[14.246492] (yolox) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/deploy/ONNXRuntime/onnx_inference.py to onnx_inference.cpython-310.pyc\n'}
+[14.247184] (yolox) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.260058] (yolox) StdoutLine: {'line': b'Copying ../../build/yolox/yolox.egg-info to /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox-0.1.0-py3.10.egg-info\n'}
+[14.260394] (yolox) StdoutLine: {'line': b'running install_scripts\n'}
+[14.260550] (-) TimerEvent: {}
+[14.304620] (yolox) StdoutLine: {'line': b"writing list of installed files to '/home/jf/tello_tracking_ws/build/yolox/install.log'\n"}
+[14.360708] (-) TimerEvent: {}
+[14.461034] (-) TimerEvent: {}
+[14.561355] (-) TimerEvent: {}
+[14.661702] (-) TimerEvent: {}
+[14.746761] (yolox) CommandEnded: {'returncode': 0}
+[14.752163] (yolox) JobEnded: {'identifier': 'yolox', 'rc': 0}
+[14.752840] (-) EventReactorShutdown: {}

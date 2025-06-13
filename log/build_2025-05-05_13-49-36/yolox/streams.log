@@ -1,0 +1,26 @@
+[4.901s] Invoking command in '/home/jf/tello_tracking_ws/src/ByteTrack': PYTHONPATH=/home/jf/tello_tracking_ws/build/yolox/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolox build --build-base /home/jf/tello_tracking_ws/build/yolox/build install --record /home/jf/tello_tracking_ws/build/yolox/install.log --single-version-externally-managed
+[6.718s] running egg_info
+[6.732s] writing ../../build/yolox/yolox.egg-info/PKG-INFO
+[6.733s] writing dependency_links to ../../build/yolox/yolox.egg-info/dependency_links.txt
+[6.733s] writing top-level names to ../../build/yolox/yolox.egg-info/top_level.txt
+[6.768s] reading manifest file '../../build/yolox/yolox.egg-info/SOURCES.txt'
+[6.769s] adding license file 'LICENSE'
+[6.771s] writing manifest file '../../build/yolox/yolox.egg-info/SOURCES.txt'
+[6.771s] running build
+[6.771s] running build_py
+[6.782s] running build_ext
+[6.786s] building 'yolox._C' extension
+[6.791s] Emitting ninja build file /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/build.ninja...
+[6.792s] Compiling objects...
+[6.792s] Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[6.794s] ninja: no work to do.
+[6.795s] x86_64-linux-gnu-g++ -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval/cocoeval.o /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/vision.o -L/home/jf/.local/lib/python3.10/site-packages/torch/lib -L/usr/lib/x86_64-linux-gnu -lc10 -ltorch -ltorch_cpu -ltorch_python -o /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/_C.cpython-310-x86_64-linux-gnu.so
+[7.130s] running install
+[7.133s] running install_lib
+[7.151s] copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/_C.cpython-310-x86_64-linux-gnu.so -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox
+[7.162s] running install_egg_info
+[7.175s] removing '/home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox-0.1.0-py3.10.egg-info' (and everything under it)
+[7.175s] Copying ../../build/yolox/yolox.egg-info to /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox-0.1.0-py3.10.egg-info
+[7.176s] running install_scripts
+[7.222s] writing list of installed files to '/home/jf/tello_tracking_ws/build/yolox/install.log'
+[7.667s] Invoked command in '/home/jf/tello_tracking_ws/src/ByteTrack' returned '0': PYTHONPATH=/home/jf/tello_tracking_ws/build/yolox/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolox build --build-base /home/jf/tello_tracking_ws/build/yolox/build install --record /home/jf/tello_tracking_ws/build/yolox/install.log --single-version-externally-managed

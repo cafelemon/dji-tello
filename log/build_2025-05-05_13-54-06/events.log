@@ -1,0 +1,135 @@
+[0.000000] (-) TimerEvent: {}
+[0.000771] (yolov5_bytetrack_ros) JobQueued: {'identifier': 'yolov5_bytetrack_ros', 'dependencies': OrderedDict()}
+[0.000839] (yolox) JobQueued: {'identifier': 'yolox', 'dependencies': OrderedDict()}
+[0.000886] (yolov5_bytetrack_ros) JobStarted: {'identifier': 'yolov5_bytetrack_ros'}
+[0.007072] (yolox) JobStarted: {'identifier': 'yolox'}
+[0.099793] (-) TimerEvent: {}
+[0.200221] (-) TimerEvent: {}
+[0.300663] (-) TimerEvent: {}
+[0.401075] (-) TimerEvent: {}
+[0.501510] (-) TimerEvent: {}
+[0.601912] (-) TimerEvent: {}
+[0.702205] (-) TimerEvent: {}
+[0.802508] (-) TimerEvent: {}
+[0.902942] (-) TimerEvent: {}
+[1.003335] (-) TimerEvent: {}
+[1.103593] (-) TimerEvent: {}
+[1.203897] (-) TimerEvent: {}
+[1.304329] (-) TimerEvent: {}
+[1.404757] (-) TimerEvent: {}
+[1.505198] (-) TimerEvent: {}
+[1.605621] (-) TimerEvent: {}
+[1.706104] (-) TimerEvent: {}
+[1.806533] (-) TimerEvent: {}
+[1.906935] (-) TimerEvent: {}
+[2.007408] (-) TimerEvent: {}
+[2.107834] (-) TimerEvent: {}
+[2.208273] (-) TimerEvent: {}
+[2.308695] (-) TimerEvent: {}
+[2.409146] (-) TimerEvent: {}
+[2.509556] (-) TimerEvent: {}
+[2.609930] (-) TimerEvent: {}
+[2.710262] (-) TimerEvent: {}
+[2.810585] (-) TimerEvent: {}
+[2.910909] (-) TimerEvent: {}
+[3.011272] (-) TimerEvent: {}
+[3.034043] (yolov5_bytetrack_ros) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/yolov5_bytetrack_ros', 'build', '--build-base', '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/build', 'install', '--record', '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jf/tello_tracking_ws/src/yolov5_bytetrack_ros', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'jf', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jf', 'OLDPWD': '/home/jf/tello_tracking_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'fr_FR.UTF-8', 'SYSTEMD_EXEC_PID': '1528', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/jf/tello_tracking_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'jf', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jf', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/jf/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jf-Lenovo-Legion-R7000P2020H:@/tmp/.ICE-unix/1506,unix/jf-Lenovo-Legion-R7000P2020H:/tmp/.ICE-unix/1506', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b1e86f8e_74be_47e9_b2d9_91e7aa5db620', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.147', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages:/home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages:/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.111397] (-) TimerEvent: {}
+[3.211691] (-) TimerEvent: {}
+[3.311971] (-) TimerEvent: {}
+[3.412270] (-) TimerEvent: {}
+[3.413514] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running egg_info\n'}
+[3.435874] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/PKG-INFO\n'}
+[3.436191] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing dependency_links to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/dependency_links.txt\n'}
+[3.436359] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing entry points to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/entry_points.txt\n'}
+[3.436529] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing requirements to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/requires.txt\n'}
+[3.436636] (yolov5_bytetrack_ros) StdoutLine: {'line': b'writing top-level names to ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/top_level.txt\n'}
+[3.463060] (yolov5_bytetrack_ros) StdoutLine: {'line': b"reading manifest file '../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/SOURCES.txt'\n"}
+[3.463816] (yolov5_bytetrack_ros) StdoutLine: {'line': b"writing manifest file '../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info/SOURCES.txt'\n"}
+[3.464090] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running build\n'}
+[3.464217] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running build_py\n'}
+[3.464385] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install\n'}
+[3.468631] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install_lib\n'}
+[3.482129] (yolov5_bytetrack_ros) StdoutLine: {'line': b'byte-compiling /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros/tracker_node.py to tracker_node.cpython-310.pyc\n'}
+[3.482429] (yolov5_bytetrack_ros) StderrLine: {'line': b'Sorry: TabError: inconsistent use of tabs and spaces in indentation (tracker_node.py, line 14)\n'}
+[3.482606] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install_data\n'}
+[3.482707] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.496423] (yolov5_bytetrack_ros) StdoutLine: {'line': b"removing '/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.496789] (yolov5_bytetrack_ros) StdoutLine: {'line': b'Copying ../../build/yolov5_bytetrack_ros/yolov5_bytetrack_ros.egg-info to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros-0.0.0-py3.10.egg-info\n'}
+[3.497281] (yolov5_bytetrack_ros) StdoutLine: {'line': b'running install_scripts\n'}
+[3.512405] (-) TimerEvent: {}
+[3.549415] (yolov5_bytetrack_ros) StdoutLine: {'line': b'Installing tello_image_publisher script to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/yolov5_bytetrack_ros\n'}
+[3.549625] (yolov5_bytetrack_ros) StdoutLine: {'line': b'Installing tello_video_subscriber script to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/yolov5_bytetrack_ros\n'}
+[3.549742] (yolov5_bytetrack_ros) StdoutLine: {'line': b'Installing tracker_node script to /home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/yolov5_bytetrack_ros\n'}
+[3.550003] (yolov5_bytetrack_ros) StdoutLine: {'line': b"writing list of installed files to '/home/jf/tello_tracking_ws/build/yolov5_bytetrack_ros/install.log'\n"}
+[3.597510] (yolov5_bytetrack_ros) CommandEnded: {'returncode': 0}
+[3.612581] (-) TimerEvent: {}
+[3.613235] (yolov5_bytetrack_ros) JobEnded: {'identifier': 'yolov5_bytetrack_ros', 'rc': 0}
+[3.712723] (-) TimerEvent: {}
+[3.813040] (-) TimerEvent: {}
+[3.913370] (-) TimerEvent: {}
+[4.013695] (-) TimerEvent: {}
+[4.114038] (-) TimerEvent: {}
+[4.214385] (-) TimerEvent: {}
+[4.314714] (-) TimerEvent: {}
+[4.415038] (-) TimerEvent: {}
+[4.515388] (-) TimerEvent: {}
+[4.615762] (-) TimerEvent: {}
+[4.716134] (-) TimerEvent: {}
+[4.816521] (-) TimerEvent: {}
+[4.886661] (yolox) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/yolox', 'build', '--build-base', '/home/jf/tello_tracking_ws/build/yolox/build', 'install', '--record', '/home/jf/tello_tracking_ws/build/yolox/install.log', '--single-version-externally-managed'], 'cwd': '/home/jf/tello_tracking_ws/src/ByteTrack', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'jf', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jf', 'OLDPWD': '/home/jf/tello_tracking_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'fr_FR.UTF-8', 'SYSTEMD_EXEC_PID': '1528', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/jf/tello_tracking_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'jf', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jf', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/jf/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jf-Lenovo-Legion-R7000P2020H:@/tmp/.ICE-unix/1506,unix/jf-Lenovo-Legion-R7000P2020H:/tmp/.ICE-unix/1506', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b1e86f8e_74be_47e9_b2d9_91e7aa5db620', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.147', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jf/tello_tracking_ws/build/yolox', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jf/tello_tracking_ws/build/yolox/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages:/home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages:/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[4.916690] (-) TimerEvent: {}
+[5.017098] (-) TimerEvent: {}
+[5.117511] (-) TimerEvent: {}
+[5.217904] (-) TimerEvent: {}
+[5.318309] (-) TimerEvent: {}
+[5.418684] (-) TimerEvent: {}
+[5.519063] (-) TimerEvent: {}
+[5.619458] (-) TimerEvent: {}
+[5.719748] (-) TimerEvent: {}
+[5.820313] (-) TimerEvent: {}
+[5.920639] (-) TimerEvent: {}
+[6.021145] (-) TimerEvent: {}
+[6.121500] (-) TimerEvent: {}
+[6.221853] (-) TimerEvent: {}
+[6.322227] (-) TimerEvent: {}
+[6.422598] (-) TimerEvent: {}
+[6.522943] (-) TimerEvent: {}
+[6.623304] (-) TimerEvent: {}
+[6.668422] (yolox) StdoutLine: {'line': b'running egg_info\n'}
+[6.681684] (yolox) StdoutLine: {'line': b'writing ../../build/yolox/yolox.egg-info/PKG-INFO\n'}
+[6.681977] (yolox) StdoutLine: {'line': b'writing dependency_links to ../../build/yolox/yolox.egg-info/dependency_links.txt\n'}
+[6.682242] (yolox) StdoutLine: {'line': b'writing top-level names to ../../build/yolox/yolox.egg-info/top_level.txt\n'}
+[6.716167] (yolox) StdoutLine: {'line': b"reading manifest file '../../build/yolox/yolox.egg-info/SOURCES.txt'\n"}
+[6.716859] (yolox) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[6.718562] (yolox) StdoutLine: {'line': b"writing manifest file '../../build/yolox/yolox.egg-info/SOURCES.txt'\n"}
+[6.718805] (yolox) StdoutLine: {'line': b'running build\n'}
+[6.718917] (yolox) StdoutLine: {'line': b'running build_py\n'}
+[6.723425] (-) TimerEvent: {}
+[6.729801] (yolox) StdoutLine: {'line': b'running build_ext\n'}
+[6.734380] (yolox) StdoutLine: {'line': b"building 'yolox._C' extension\n"}
+[6.737515] (yolox) StderrLine: {'line': b'Emitting ninja build file /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/build.ninja...\n'}
+[6.737687] (yolox) StderrLine: {'line': b'Compiling objects...\n'}
+[6.737743] (yolox) StderrLine: {'line': b'Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)\n'}
+[6.741367] (yolox) StdoutLine: {'line': b'ninja: no work to do.\n'}
+[6.742254] (yolox) StdoutLine: {'line': b'x86_64-linux-gnu-g++ -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/cocoeval/cocoeval.o /home/jf/tello_tracking_ws/build/yolox/build/temp.linux-x86_64-cpython-310/home/jf/tello_tracking_ws/src/ByteTrack/yolox/layers/csrc/vision.o -L/home/jf/.local/lib/python3.10/site-packages/torch/lib -L/usr/lib/x86_64-linux-gnu -lc10 -ltorch -ltorch_cpu -ltorch_python -o /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/_C.cpython-310-x86_64-linux-gnu.so\n'}
+[6.823556] (-) TimerEvent: {}
+[6.923880] (-) TimerEvent: {}
+[7.024458] (-) TimerEvent: {}
+[7.087417] (yolox) StdoutLine: {'line': b'running install\n'}
+[7.091817] (yolox) StdoutLine: {'line': b'running install_lib\n'}
+[7.109828] (yolox) StdoutLine: {'line': b'copying /home/jf/tello_tracking_ws/build/yolox/build/lib.linux-x86_64-cpython-310/yolox/_C.cpython-310-x86_64-linux-gnu.so -> /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox\n'}
+[7.121268] (yolox) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.124583] (-) TimerEvent: {}
+[7.136179] (yolox) StdoutLine: {'line': b"removing '/home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[7.136466] (yolox) StdoutLine: {'line': b'Copying ../../build/yolox/yolox.egg-info to /home/jf/tello_tracking_ws/install/yolox/lib/python3.10/site-packages/yolox-0.1.0-py3.10.egg-info\n'}
+[7.136911] (yolox) StdoutLine: {'line': b'running install_scripts\n'}
+[7.187326] (yolox) StdoutLine: {'line': b"writing list of installed files to '/home/jf/tello_tracking_ws/build/yolox/install.log'\n"}
+[7.224698] (-) TimerEvent: {}
+[7.324994] (-) TimerEvent: {}
+[7.425280] (-) TimerEvent: {}
+[7.525571] (-) TimerEvent: {}
+[7.625841] (-) TimerEvent: {}
+[7.651494] (yolox) CommandEnded: {'returncode': 0}
+[7.657142] (yolox) JobEnded: {'identifier': 'yolox', 'rc': 0}
+[7.658358] (-) EventReactorShutdown: {}

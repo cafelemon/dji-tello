@@ -1,0 +1,3 @@
+source;share/yolox/hook/pythonpath.ps1
+source;share/yolox/hook/pythonpath.dsv
+source;share/yolox/hook/pythonpath.sh

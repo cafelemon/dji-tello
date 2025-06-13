@@ -1,0 +1,5 @@
+  File "/home/jf/tello_tracking_ws/install/yolov5_bytetrack_ros/lib/python3.10/site-packages/yolov5_bytetrack_ros/tello_cmd_vel_bridge.py", line 38
+    self.tello.send_rc_control((int)0, (int)0, (int)0, (int)0)  # 激活 RC 模式
+                                ^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+

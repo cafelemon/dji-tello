@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: yolov5-bytetrack-ros
+Version: 0.0.0
+Summary: YOLOv5 + ByteTrack ROS2 integration for Tello drone tracking
+Maintainer: jf
+Maintainer-email: jf@todo.todo
+License: TODO: License declaration

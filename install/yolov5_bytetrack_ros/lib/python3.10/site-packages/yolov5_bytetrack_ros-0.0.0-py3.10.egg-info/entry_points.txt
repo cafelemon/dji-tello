@@ -1,0 +1,5 @@
+[console_scripts]
+tello_image_publisher = yolov5_bytetrack_ros.tello_image_publisher:main
+tello_video_bridge = yolov5_bytetrack_ros.tello_cmd_vel_bridge:main
+tello_video_subscriber = yolov5_bytetrack_ros.tello_video_subscriber:main
+tracker_node = yolov5_bytetrack_ros.tracker_node:main
