@@ -27,7 +27,6 @@ This project provides an automatic object tracking system for **DJI Tello** usin
 ---
 
 ## 📁 文件结构 | Project Structure
-
 tello_tracking_ws/
 ├── src/
 │ ├── tello_cmd_vel_bridge.py # Tello 控制器节点（含自动起飞+高度 PID）
@@ -35,7 +34,6 @@ tello_tracking_ws/
 │ ├── tello_image_publisher.py # 备用图像发布节点
 │ └── yolov5_bytetrack_ros/ # 模型和追踪器代码（YOLOv5 + ByteTrack）
 ├── yolov5s.pt # YOLOv5 权重文件
-
 
 ---
 
