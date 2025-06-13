@@ -75,7 +75,8 @@ Fei Jia (贾飞)
 Master in Embedded AI, ESIGELEC, Rouen
 🇨🇳 | 🇫🇷 | ✉️ fei.jia@groupe-esigelec.org
 GitHub: cafelemon
-
+Tang Ran(汤然)
+Master in Embedded AI, ESIGELEC, Rouen
 ---
 
 ### ✅ 操作建议：
