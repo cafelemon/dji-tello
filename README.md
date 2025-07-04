@@ -106,6 +106,6 @@ Fei Jia (贾飞)
 Master in Embedded AI, ESIGELEC, Rouen  
 🇨🇳 | 🇫🇷 | ✉️ fei.jia@groupe-esigelec.org
 
----
-
-✅ 若需要自动生成 `.gitignore` 或 launch 文件，可联系我进一步完善！
+Ran Tang (汤然)  
+Master in Embedded AI, ESIGELEC, Rouen  
+🇨🇳 | 🇫🇷 | ✉️ ran.tang@groupe-esigelec.org
