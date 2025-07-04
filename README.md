@@ -1,89 +1,111 @@
-# 🛸 DJI Tello ROS2 自动跟踪系统 | ROS2-based DJI Tello Tracking System
 
-本项目基于 **ROS2 + YOLOv5 + ByteTrack**，实现对 DJI Tello 无人机的视频识别与目标自动跟踪控制，可通过 PID 控制维持目标在画面中心，并支持飞行高度自动控制与图像回传。
+# 🚁 DJI Tello ROS2 人体跟踪系统 | ROS2 Human Tracking System for DJI Tello
 
-This project provides an automatic object tracking system for **DJI Tello** using **ROS2, YOLOv5, and ByteTrack**. The drone tracks human targets in real-time, maintaining position using PID control, with altitude stabilization and video publishing features.
+## 📄 项目简介 | Project Overview
 
----
+该系统基于 **ROS2 + YOLOv5 + ByteTrack**，结合 Tello 无人机，实现了对人体目标的自动检测、ID 锁定、精准追踪控制，并支持高度闭环控制、手动锁定、自动恢复、以及安全避障。
 
-## ✨ 功能 | Features
+This project combines **ROS2**, **YOLOv5**, and **ByteTrack** to enable automatic human detection, manual ID locking, smooth tracking, and robust PID-based drone control on the DJI Tello. It supports altitude holding, dynamic ID recovery, and safety fallback.
 
-- 🎯 实时人像检测（YOLOv5）
-- 🧠 多目标关联跟踪（ByteTrack）
-- 🚁 Tello 实时控制（djitellopy + ROS2 cmd_vel）
-- 🖼 图像话题发布 `/tello/image_raw`
-- 🛠 自定义 PID 控制器维持目标中心 & 高度稳定
-- ⚡ 遇障识别 + 目标丢失处理（可扩展）
+## 💡 功能特点 | Features
 
----
+✅ YOLOv5 实时人体检测  
+✅ ByteTrack 多目标 ID 分配与持续追踪  
+✅ 手动输入 ID 锁定 & 动态取消  
+✅ 目标丢失后自动 ID 恢复  
+✅ PID 控制器平滑跟踪（前后、上下、旋转）  
+✅ Tello 高度自动保持（目标 1.8 m）  
+✅ ROS2 topic 架构，模块化设计
 
-## 📦 系统要求 | Requirements
+## 🗺️ 系统架构 | System Architecture
 
-- ROS2 Foxy/Humble（建议使用 Ubuntu 20.04/22.04）
-- Python 3.8+
-- `djitellopy`, `torch`, `opencv-python`, `cv_bridge`, `numpy`
-- 已添加 SSH 密钥的 GitHub 账户（用于拉取 YOLO 模型等）
+```
+[ Tello Drone ]
+    │
+    │──> /tello/image_raw (视频流)
+    │
+[ tracker_node.py ]
+    │──> YOLOv5 检测
+    │──> ByteTrack 跟踪与 ID 分配
+    │──> PID 控制输出
+    │──> /tello/cmd_vel (速度指令)
+    │──> /yolo/image_out (标注后图像)
+    │
+[ tello_cmd_vel_bridge.py ]
+    │──> 接收 /tello/cmd_vel
+    │──> 调用 send_rc_control 控制无人机
+    │──> 高度 PID 控制
+```
 
----
+## ⚙️ 文件结构 | File Structure
 
-## 📁 文件结构 | Project Structure
+```
 tello_tracking_ws/
 ├── src/
-│ ├── tello_cmd_vel_bridge.py # Tello 控制器节点（含自动起飞+高度 PID）
-│ ├── tracker_node.py # 图像识别+目标跟踪+控制逻辑
-│ ├── tello_image_publisher.py # 备用图像发布节点
-│ └── yolov5_bytetrack_ros/ # 模型和追踪器代码（YOLOv5 + ByteTrack）
-├── yolov5s.pt # YOLOv5 权重文件
+│   ├── tracker_node.py
+│   ├── tello_cmd_vel_bridge.py
+│   └── yolov5/ (模型代码)
+├── yolov5s.pt (模型权重)
+├── README.md
+```
 
----
+## 🚀 运行步骤 | Running
 
-## 🚀 快速运行 | Quick Start
-
-### ✅ 安装依赖
+### 1️⃣ 安装依赖
 
 ```bash
 sudo apt update
-sudo apt install python3-pip python3-colcon-common-extensions
-pip install torch opencv-python djitellopy numpy
+sudo apt install python3-colcon-common-extensions python3-pip
+pip install torch torchvision opencv-python djitellopy numpy
+```
 
-✅ 启动项目
-打开无人机电源，确保与主机 Wi-Fi 连接
-
-启动 ROS2 节点：
-
-bash
-cd tello_tracking_ws
-python3 src/tello_cmd_vel_bridge.py       # 启动无人机控制与图像发布
-python3 src/tracker_node.py               # 启动检测跟踪控制逻辑
-可选：使用 rqt_image_view 查看图像话题 /tello/image_raw
-
-📌 TODO & 可扩展功能
- 遮挡避障逻辑（自动规避 & 重新识别）
-
- 支持多目标切换
-
- 引入深度相机进行 3D 避障
-
- UI 控制界面（Web 控制或语音指令）
-
-📜 License
-本项目源代码遵循 MIT 开源协议。
-YOLOv5 模型遵循 Ultralytics 的许可证约定。
-
-🤝 作者 | Author
-Fei Jia (贾飞)
-Master in Embedded AI, ESIGELEC, Rouen
-🇨🇳 | 🇫🇷 | ✉️ fei.jia@groupe-esigelec.org
-GitHub: cafelemon
-Tang Ran(汤然)
-Master in Embedded AI, ESIGELEC, Rouen
----
-
-### ✅ 操作建议：
-
-保存为 `tello_tracking_ws/README.md`，然后执行：
+### 2️⃣ 下载 YOLOv5 权重
 
 ```bash
-git add README.md
-git commit -m "Add bilingual README for Tello tracking system"
-git push
+wget https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5s.pt
+```
+
+### 3️⃣ 启动无人机
+
+```bash
+ros2 run your_package_name tello_cmd_vel_bridge.py
+```
+
+### 4️⃣ 启动跟踪节点
+
+```bash
+ros2 run your_package_name tracker_node.py
+```
+
+### 5️⃣ 查看图像话题（可选）
+
+```bash
+rqt_image_view /yolo/image_out
+```
+
+## 🛠️ PID 调参建议 | PID Tuning Tips
+
+- **yaw (旋转):** 当前限制 ±120，可根据需要调大或调小
+- **linear.x (前后):** 用检测框面积闭环，建议小幅微调 kp
+- **linear.z (上下):** 对应垂直中心误差，可微调以减小抖动
+
+## 🔥 高级功能（已集成）| Advanced Features
+
+- 🔄 自动中心新 ID 恢复追踪
+- 🛑 丢失超时自动解锁
+- 🟥 红框标记当前锁定目标
+
+## ⚠️ 注意事项 | Notes
+
+- 默认 CPU 推理，可配置 `torch.device('cuda')` 使用 GPU
+- 建议在稳定光照、较空旷环境测试
+
+## 📝 作者 | Author
+
+Fei Jia (贾飞)  
+Master in Embedded AI, ESIGELEC, Rouen  
+🇨🇳 | 🇫🇷 | ✉️ fei.jia@groupe-esigelec.org
+
+---
+
+✅ 若需要自动生成 `.gitignore` 或 launch 文件，可联系我进一步完善！
