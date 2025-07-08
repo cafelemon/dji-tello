@@ -6,7 +6,6 @@ from cv_bridge import CvBridge
 from djitellopy import Tello
 import time
 
-# 简易 PID 控制器，用于高度闭环控制
 class PIDController:
     def __init__(self, kp, ki, kd, setpoint=0):
         self.kp = kp
