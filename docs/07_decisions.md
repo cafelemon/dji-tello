@@ -43,3 +43,11 @@ ONNX 使用静态 batch 1、640×640、opset 13；FP16 Engine 在目标 Jetson �
 ## D-011 本机稳定性验收时长
 
 本机软件验收采用最多 2 核 CPU、4GB 内存的 120 秒离线回放，按真实帧数、错误数和 RSS 窗口变化判定；更长时间运行进入目标平台专项测试，不用短时数据替代。
+
+## D-012 Jetson 视频解码失败策略
+
+Transport 只接受 `software` 或 `nvv4l2`。Jetson 配置选择 `nvv4l2` 后若管线初始化失败，诊断保持错误并停止输出视频，不静默切换软件解码。
+
+## D-013 系统指标缺失语义
+
+`/system/diagnostics` 不推测设备数据。非 Jetson 环境或无权限读取的 GPU、温度、功耗与降频指标使用 `unavailable` 或 `unknown`，由消费方区分“正常零值”和“无数据”。

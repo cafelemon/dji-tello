@@ -30,6 +30,7 @@ struct TelemetryValues
 
 std::optional<TelemetryValues> parse_telemetry(const std::string & payload);
 std::string format_rc_command(int lr, int fb, int ud, int yaw, int limit = 100);
+std::string build_gstreamer_pipeline(int video_port, const std::string & video_decoder);
 bool is_success_ack(const std::string & response);
 std::string trim_copy(const std::string & value);
 

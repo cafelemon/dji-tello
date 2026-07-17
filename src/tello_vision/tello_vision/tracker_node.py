@@ -247,7 +247,9 @@ class TrackerNode(Node):
         image_height, image_width = frame.shape[:2]
         prepared = self.letterbox(frame, self.image_size, stride=self.stride, auto=True)[0]
         prepared = prepared[:, :, ::-1].transpose(2, 0, 1)
-        tensor = self.torch.from_numpy(np.ascontiguousarray(prepared)).to(self.device).float() / 255.0
+        tensor = self.torch.from_numpy(np.ascontiguousarray(prepared)).to(self.device)
+        tensor = tensor.half() if self.model.fp16 else tensor.float()
+        tensor /= 255.0
         if tensor.ndimension() == 3:
             tensor = tensor.unsqueeze(0)
         with self.torch.no_grad():

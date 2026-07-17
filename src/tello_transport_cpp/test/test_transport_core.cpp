@@ -38,3 +38,27 @@ TEST(TransportCore, RateGateUsesMonotonicIntervals)
   EXPECT_FALSE(gate.allow(start + 99ms));
   EXPECT_TRUE(gate.allow(start + 100ms));
 }
+
+TEST(TransportCore, BuildsSoftwareVideoPipeline)
+{
+  const auto pipeline = tello_transport_cpp::build_gstreamer_pipeline(11111, "software");
+  EXPECT_NE(pipeline.find("udpsrc port=11111"), std::string::npos);
+  EXPECT_NE(pipeline.find("avdec_h264"), std::string::npos);
+  EXPECT_EQ(pipeline.find("nvv4l2decoder"), std::string::npos);
+}
+
+TEST(TransportCore, BuildsJetsonVideoPipelineWithoutFallback)
+{
+  const auto pipeline = tello_transport_cpp::build_gstreamer_pipeline(11111, "nvv4l2");
+  EXPECT_NE(pipeline.find("nvv4l2decoder"), std::string::npos);
+  EXPECT_NE(pipeline.find("nvvidconv"), std::string::npos);
+  EXPECT_EQ(pipeline.find("avdec_h264"), std::string::npos);
+}
+
+TEST(TransportCore, RejectsUnknownVideoDecoder)
+{
+  EXPECT_THROW(
+    tello_transport_cpp::build_gstreamer_pipeline(11111, "auto"), std::invalid_argument);
+  EXPECT_THROW(
+    tello_transport_cpp::build_gstreamer_pipeline(0, "software"), std::invalid_argument);
+}

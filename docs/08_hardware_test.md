@@ -28,6 +28,8 @@
 | H-11 | Jetson 构建 ONNX 对应 FP16 Engine | Engine 可加载并完成固定输入推理 | 构建日志/模型 SHA | 待硬件验证 |
 | H-12 | systemd 启动、异常重启与版本回滚 | 服务恢复且回滚后接口保持兼容 | journal/版本记录 | 待硬件验证 |
 | H-13 | CPU、CUDA、TensorRT 三组基准 | 保存统一 JSON/CSV，数据可复算 | 性能证据包 | 待硬件验证 |
+| H-14 | `nvv4l2decoder` 接收 Tello H264 视频 | 持续发布最新帧；解码器缺失或初始化失败时明确报错且不回退 | GStreamer 日志/话题频率/诊断 | 待硬件验证 |
+| H-15 | 采集 `/system/diagnostics` | CPU、GPU、RAM、温度、功耗模式、降频和关键进程字段可读取 | rosbag/诊断快照 | 待硬件验证 |
 
 ## 结果记录模板
 

@@ -85,6 +85,27 @@ std::string format_rc_command(int lr, int fb, int ud, int yaw, int limit)
   return command.str();
 }
 
+std::string build_gstreamer_pipeline(int video_port, const std::string & video_decoder)
+{
+  if (video_port <= 0 || video_port > 65535) {
+    throw std::invalid_argument("video_port must be between 1 and 65535");
+  }
+
+  std::ostringstream pipeline;
+  pipeline << "udpsrc port=" << video_port
+           << " ! queue max-size-buffers=1 leaky=downstream ! h264parse ! ";
+  if (video_decoder == "software") {
+    pipeline << "avdec_h264 ! videoconvert";
+  } else if (video_decoder == "nvv4l2") {
+    pipeline << "nvv4l2decoder ! nvvidconv ! video/x-raw,format=BGRx ! videoconvert"
+             << " ! video/x-raw,format=BGR";
+  } else {
+    throw std::invalid_argument("video_decoder must be software or nvv4l2");
+  }
+  pipeline << " ! appsink drop=true max-buffers=1 sync=false";
+  return pipeline.str();
+}
+
 bool is_success_ack(const std::string & response)
 {
   auto normalized = trim_copy(response);

@@ -10,6 +10,15 @@ python3 tools/benchmark_inference.py \
 
 Jetson 分别执行 PyTorch CUDA 和 TensorRT FP16。每组固定预热 50 次、测量 500 次，保存 `summary.json` 与 `latencies.csv`，记录 FPS、平均/P95 推理耗时、CPU、GPU、RSS 和温度。
 
+```bash
+python3 tools/benchmark_inference.py --backend pytorch --device cuda:0 \
+  --warmup 50 --runs 500 --output-dir artifacts/benchmark/cuda
+python3 tools/benchmark_inference.py --backend tensorrt --device cuda:0 \
+  --warmup 50 --runs 500 --output-dir artifacts/benchmark/tensorrt-fp16
+```
+
+640×640 输入目标为不低于 15 FPS、P95 推理耗时不高于 150ms。工具始终保存真实结果；未达到目标时保留证据并进入优化，不修改或舍弃测量数据。
+
 ## 本机短时端到端稳定性
 
 ```bash

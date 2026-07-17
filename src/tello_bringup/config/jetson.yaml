@@ -1,0 +1,20 @@
+tello_transport:
+  ros__parameters:
+    video_decoder: nvv4l2
+
+tello_tracker:
+  ros__parameters:
+    inference_backend: tensorrt
+    device: cuda:0
+    fp16: true
+    engine_path: /opt/tello-edge/current/models/yolov5s_fp16.engine
+
+tello_system_monitor:
+  ros__parameters:
+    diagnostics_period_s: 1.0
+    warning_temperature_c: 80.0
+    critical_temperature_c: 90.0
+    critical_nodes:
+      - tello_transport
+      - tello_flight_manager
+      - tello_tracker

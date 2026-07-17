@@ -104,6 +104,17 @@ ros2 service call /tracking/set_target tello_interfaces/srv/SetTarget '{track_id
 ros2 service call /tracking/clear_target std_srvs/srv/Trigger '{}'
 ```
 
+## Jetson 运行配置
+
+Jetson 使用默认配置叠加 `jetson.yaml`，启用 TensorRT FP16、`cuda:0`、固定 Engine 路径和 `nvv4l2decoder`：
+
+```bash
+source install/setup.bash
+ros2 launch tello_bringup jetson.launch.py
+```
+
+`nvv4l2` 解码初始化失败时 Transport 会保持视频链路异常并明确报错，不会静默切换到软件解码。默认 `real.launch.py` 继续使用 CPU/PyTorch 和软件解码。
+
 ## 配置与诊断
 
 统一参数位于 `src/tello_bringup/config/default.yaml`。常用接口：
@@ -112,6 +123,7 @@ ros2 service call /tracking/clear_target std_srvs/srv/Trigger '{}'
 - `/tello/link_status`：控制、遥测、视频链路诊断；
 - `/tracking/status`、`/tracking/cmd_vel`：跟踪结果和控制建议；
 - `/tracking/diagnostics`：推理后端、FPS、耗时、帧龄、丢帧和错误计数；
+- `/system/diagnostics`：CPU、GPU、RAM、温度、功耗模式、热降频和关键进程健康度；
 - `/flight/status`：飞行状态、原因和状态时间；
 - `/yolo/image_out`：标注图像。
 
@@ -122,6 +134,7 @@ ros2 topic echo /tello/link_status
 ros2 topic hz /tello/telemetry
 ros2 topic hz /tello/image_raw
 ros2 topic echo /flight/status
+ros2 topic echo /system/diagnostics
 ```
 
-完整设计和验收资料见 [docs/00_overview.md](docs/00_overview.md)，采购盘点使用 [docs/09_hardware_checklist.md](docs/09_hardware_checklist.md)，Jetson 预研见 [docs/10_jetson_deployment.md](docs/10_jetson_deployment.md)。
+完整设计和验收资料见 [docs/00_overview.md](docs/00_overview.md)，采购盘点使用 [docs/09_hardware_checklist.md](docs/09_hardware_checklist.md)，Jetson 部署见 [docs/10_jetson_deployment.md](docs/10_jetson_deployment.md)。

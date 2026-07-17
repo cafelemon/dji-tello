@@ -33,3 +33,22 @@
 | Jetson 部署与性能规范 | 完成 |
 
 `0.2.0-prep` 仅代表预研产物完成，正式 `0.2.0` 仍按路线图推进。
+
+## 0.2.0
+
+| 软件工作项 | 状态 |
+| --- | --- |
+| `jetson.yaml` 与 Jetson Launch | 完成 |
+| Transport `software/nvv4l2` 解码器选择 | 完成 |
+| TensorRT FP16 输入路径修正 | 完成 |
+| `/system/diagnostics` 系统监控节点 | 完成 |
+| Jetson 前置检查与 release 布局校验 | 完成 |
+| systemd current/previous 激活和回滚 | 完成 |
+
+当前包版本仍保持 `0.1.0`。正式版本号只在 `0.2.0` 全部验收项关闭后统一更新。
+
+### 当前软件验证结论
+
+- ROS2 Humble 限制 2 核 CPU、4GB 内存完成 7 个包构建，28 项 ROS2 测试全部通过。
+- 本地纯逻辑和仓库静态门禁 20 项全部通过。
+- Jetson 前置检查、TensorRT Engine 命令完成 dry-run，systemd 服务文件完成目标目录布局下的静态校验。

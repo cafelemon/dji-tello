@@ -5,6 +5,7 @@ tello_transport:
     local_command_port: 9000
     state_port: 8890
     video_port: 11111
+    video_decoder: software
     command_timeout_s: 2.0
     command_retries: 3
     rc_rate_hz: 20.0

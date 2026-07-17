@@ -61,6 +61,14 @@ diagnostic_msgs::msg::KeyValue key_value(const std::string & key, bool value)
   item.value = value ? "true" : "false";
   return item;
 }
+
+diagnostic_msgs::msg::KeyValue key_value(const std::string & key, const std::string & value)
+{
+  diagnostic_msgs::msg::KeyValue item;
+  item.key = key;
+  item.value = value;
+  return item;
+}
 }  // namespace
 
 class TelloTransportNode final : public rclcpp::Node
@@ -74,6 +82,7 @@ public:
     local_command_port_ = declare_parameter<int>("local_command_port", 9000);
     state_port_ = declare_parameter<int>("state_port", 8890);
     video_port_ = declare_parameter<int>("video_port", 11111);
+    video_decoder_ = declare_parameter<std::string>("video_decoder", "software");
     command_timeout_s_ = declare_parameter<double>("command_timeout_s", 2.0);
     command_retries_ = declare_parameter<int>("command_retries", 3);
     rc_rate_hz_ = declare_parameter<double>("rc_rate_hz", 20.0);
@@ -85,9 +94,7 @@ public:
     auto_connect_ = declare_parameter<bool>("auto_connect", true);
     gstreamer_pipeline_ = declare_parameter<std::string>(
       "gstreamer_pipeline",
-      "udpsrc port=" + std::to_string(video_port_) +
-      " ! queue max-size-buffers=1 leaky=downstream ! h264parse ! avdec_h264 ! "
-      "videoconvert ! appsink drop=true max-buffers=1 sync=false");
+      build_gstreamer_pipeline(video_port_, video_decoder_));
 
     telemetry_pub_ = create_publisher<tello_interfaces::msg::TelloTelemetry>(
       "/tello/telemetry", rclcpp::SensorDataQoS());
@@ -120,7 +127,9 @@ public:
     if (!video_required_) {
       last_video_ns_.store(steady_nanoseconds());
     }
-    RCLCPP_INFO(get_logger(), "Tello transport ready for %s:%d", drone_ip_.c_str(), command_port_);
+    RCLCPP_INFO(
+      get_logger(), "Tello transport ready for %s:%d using %s video decoder",
+      drone_ip_.c_str(), command_port_, video_decoder_.c_str());
   }
 
   ~TelloTransportNode() override
@@ -334,7 +343,10 @@ private:
     while (running_.load()) {
       cv::VideoCapture capture(gstreamer_pipeline_, cv::CAP_GSTREAMER);
       if (!capture.isOpened()) {
-        RCLCPP_ERROR_THROTTLE(get_logger(), *get_clock(), 5000, "Unable to open GStreamer video pipeline");
+        RCLCPP_ERROR_THROTTLE(
+          get_logger(), *get_clock(), 5000,
+          "Unable to open GStreamer video pipeline with decoder=%s; no fallback will be attempted",
+          video_decoder_.c_str());
         std::this_thread::sleep_for(1s);
         continue;
       }
@@ -373,6 +385,7 @@ private:
     status.values.push_back(key_value("control_healthy", control_healthy));
     status.values.push_back(key_value("state_healthy", state_healthy));
     status.values.push_back(key_value("video_healthy", video_healthy));
+    status.values.push_back(key_value("video_decoder", video_decoder_));
     status.values.push_back(key_value("airborne", airborne_.load()));
     array.status.push_back(status);
     diagnostics_pub_->publish(array);
@@ -411,6 +424,7 @@ private:
   }
 
   std::string drone_ip_;
+  std::string video_decoder_;
   std::string gstreamer_pipeline_;
   int command_port_{8889};
   int local_command_port_{9000};

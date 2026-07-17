@@ -10,6 +10,7 @@
   <exec_depend>launch_ros</exec_depend>
   <exec_depend>tello_flight_manager</exec_depend>
   <exec_depend>tello_mock</exec_depend>
+  <exec_depend>tello_system_monitor</exec_depend>
   <exec_depend>tello_transport_cpp</exec_depend>
   <exec_depend>tello_vision</exec_depend>
   <export><build_type>ament_python</build_type></export>
