@@ -1,0 +1,94 @@
+tello_transport:
+  ros__parameters:
+    drone_ip: 192.168.10.1
+    command_port: 8889
+    local_command_port: 9000
+    state_port: 8890
+    video_port: 11111
+    command_timeout_s: 2.0
+    command_retries: 3
+    rc_rate_hz: 20.0
+    rc_limit: 100
+    cmd_stale_s: 0.5
+    state_timeout_s: 1.0
+    video_timeout_s: 1.0
+    video_required: true
+    auto_connect: true
+
+tello_flight_manager:
+  ros__parameters:
+    control_rate_hz: 20.0
+    cmd_stale_s: 0.5
+    link_status_stale_s: 1.5
+    tracking_status_stale_s: 1.0
+    zero_before_land_cycles: 3
+    minimum_takeoff_battery: 20.0
+    vertical_control_mode: altitude_hold
+    target_altitude_cm: 180.0
+    reacquire_timeout_s: 2.0
+    lost_land_timeout_s: 5.0
+    altitude_pid.kp: 0.005
+    altitude_pid.ki: 0.0
+    altitude_pid.kd: 0.001
+    altitude_pid.integral_min: -100.0
+    altitude_pid.integral_max: 100.0
+    altitude_pid.output_min: -1.0
+    altitude_pid.output_max: 1.0
+    altitude_pid.deadband_cm: 5.0
+    altitude_pid.filter_alpha: 0.3
+
+tello_tracker:
+  ros__parameters:
+    weights_path: models/yolov5s.pt
+    yolov5_repo: vendor/yolov5
+    bytetrack_repo: vendor/ByteTrack
+    device: cpu
+    inference_backend: pytorch
+    engine_path: models/yolov5s_fp16.engine
+    fp16: false
+    auto_select_target: false
+    diagnostics_period_s: 1.0
+    image_size: 640
+    confidence_threshold: 0.25
+    iou_threshold: 0.45
+    track_threshold: 0.3
+    track_buffer: 30
+    match_threshold: 0.6
+    min_box_area: 10.0
+    nominal_frame_rate: 30.0
+    desired_area: 0.0
+    reacquire_timeout_s: 2.0
+    reacquire_center_ratio: 0.15
+    reacquire_area_ratio_min: 0.5
+    reacquire_area_ratio_max: 2.0
+    yaw_pid.kp: 0.002
+    yaw_pid.ki: 0.0
+    yaw_pid.kd: 0.0001
+    yaw_pid.deadband: 5.0
+    yaw_pid.filter_alpha: 0.3
+    vertical_pid.kp: 0.002
+    vertical_pid.ki: 0.0
+    vertical_pid.kd: 0.0001
+    vertical_pid.deadband: 5.0
+    vertical_pid.filter_alpha: 0.3
+    distance_pid.kp: 0.00001
+    distance_pid.ki: 0.0
+    distance_pid.kd: 0.000001
+    distance_pid.deadband: 500.0
+    distance_pid.filter_alpha: 0.3
+
+mock_tello:
+  ros__parameters:
+    bind_ip: 127.0.0.1
+    command_port: 8889
+    state_target_ip: 127.0.0.1
+    state_target_port: 8890
+    state_rate_hz: 10.0
+    battery_percent: 80
+    height_cm: 180
+    response_delay_s: 0.0
+
+offline_video_publisher:
+  ros__parameters:
+    loop: true
+    publish_rate_hz: 0.0

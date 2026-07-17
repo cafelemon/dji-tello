@@ -1,111 +1,127 @@
+# Tello Edge：ROS2 无人机边缘视觉跟踪与安全控制
 
-# 🚁 DJI Tello ROS2 人体跟踪系统 | ROS2 Human Tracking System for DJI Tello
+Tello Edge 是面向 Ubuntu 22.04 与 ROS2 Humble 的 Tello 地面侧控制系统。系统使用自研 C++ UDP Transport 管理 Tello SDK 三通道，使用 YOLOv5 与 ByteTrack 完成人体跟踪，并由独立飞行状态机统一批准控制指令、处理链路异常和执行安全降落。
 
-## 📄 项目简介 | Project Overview
+## 架构
 
-该系统基于 **ROS2 + YOLOv5 + ByteTrack**，结合 Tello 无人机，实现了对人体目标的自动检测、ID 锁定、精准追踪控制，并支持高度闭环控制、手动锁定、自动恢复、以及安全避障。
-
-This project combines **ROS2**, **YOLOv5**, and **ByteTrack** to enable automatic human detection, manual ID locking, smooth tracking, and robust PID-based drone control on the DJI Tello. It supports altitude holding, dynamic ID recovery, and safety fallback.
-
-## 💡 功能特点 | Features
-
-✅ YOLOv5 实时人体检测  
-✅ ByteTrack 多目标 ID 分配与持续追踪  
-✅ 手动输入 ID 锁定 & 动态取消  
-✅ 目标丢失后自动 ID 恢复  
-✅ PID 控制器平滑跟踪（前后、上下、旋转）  
-✅ Tello 高度自动保持（目标 1.8 m）  
-✅ ROS2 topic 架构，模块化设计
-
-## 🗺️ 系统架构 | System Architecture
-
-```
-[ Tello Drone ]
-    │
-    │──> /tello/image_raw (视频流)
-    │
-[ tracker_node.py ]
-    │──> YOLOv5 检测
-    │──> ByteTrack 跟踪与 ID 分配
-    │──> PID 控制输出
-    │──> /tello/cmd_vel (速度指令)
-    │──> /yolo/image_out (标注后图像)
-    │
-[ tello_cmd_vel_bridge.py ]
-    │──> 接收 /tello/cmd_vel
-    │──> 调用 send_rc_control 控制无人机
-    │──> 高度 PID 控制
+```text
+Tello / Mock Tello
+  ├─ UDP 8889 命令与 ACK ─┐
+  ├─ UDP 8890 遥测 ───────┼─ tello_transport_cpp ── /tello/*
+  └─ UDP 11111 H264 ──────┘
+                                  │
+ /tello/image_raw ── tello_vision ── /tracking/cmd_vel
+                                  │
+                    tello_flight_manager ── /tello/cmd_vel
 ```
 
-## ⚙️ 文件结构 | File Structure
+视觉节点只发布控制建议，只有飞行管理节点能够向 Transport 发布最终 `/tello/cmd_vel`。
 
-```
-tello_tracking_ws/
-├── src/
-│   ├── tracker_node.py
-│   ├── tello_cmd_vel_bridge.py
-│   └── yolov5/ (模型代码)
-├── yolov5s.pt (模型权重)
-├── README.md
-```
-
-## 🚀 运行步骤 | Running
-
-### 1️⃣ 安装依赖
+## 获取依赖
 
 ```bash
 sudo apt update
-sudo apt install python3-colcon-common-extensions python3-pip
-pip install torch torchvision opencv-python djitellopy numpy
+sudo apt install python3-colcon-common-extensions python3-vcstool python3-rosdep \
+  ros-humble-cv-bridge ros-humble-diagnostic-msgs libopencv-dev \
+  gstreamer1.0-libav gstreamer1.0-plugins-{base,good,bad}
+
+vcs import . < dependencies.repos
+python3 -m pip install -r requirements-vision.txt
+mkdir -p models
+wget -O models/yolov5s.pt \
+  https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5s.pt
+rosdep install --from-paths src --ignore-src -r -y
 ```
 
-### 2️⃣ 下载 YOLOv5 权重
+依赖仓库会进入已忽略的 `vendor/` 目录。启动前设置项目根目录，避免任何用户绝对路径：
 
 ```bash
-wget https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5s.pt
+export TELLO_EDGE_ROOT="$PWD"
 ```
 
-### 3️⃣ 启动无人机
+## 构建与测试
 
 ```bash
-ros2 run your_package_name tello_cmd_vel_bridge.py
+source /opt/ros/humble/setup.bash
+colcon build --symlink-install
+source install/setup.bash
+colcon test
+colcon test-result --verbose
 ```
 
-### 4️⃣ 启动跟踪节点
+也可以使用固定环境构建：
 
 ```bash
-ros2 run your_package_name tracker_node.py
+docker build -f docker/Dockerfile.humble -t tello-edge:humble .
+docker run --rm -it --network host tello-edge:humble
 ```
 
-### 5️⃣ 查看图像话题（可选）
+视觉回放与资源受限短时稳定性验收：
 
 ```bash
-rqt_image_view /yolo/image_out
+docker build -f docker/Dockerfile.vision-test -t tello-edge:vision-test .
+docker run --rm --cpus 2 --memory 4g tello-edge:vision-test bash -lc \
+  "tools/run_offline_smoke.sh /tmp/offline-smoke && \
+   tools/run_offline_soak.sh 120 /tmp/offline-short-120"
 ```
 
-## 🛠️ PID 调参建议 | PID Tuning Tips
+## Mock 快速启动
 
-- **yaw (旋转):** 当前限制 ±120，可根据需要调大或调小
-- **linear.x (前后):** 用检测框面积闭环，建议小幅微调 kp
-- **linear.z (上下):** 对应垂直中心误差，可微调以减小抖动
+```bash
+source install/setup.bash
+ros2 launch tello_bringup mock.launch.py
+```
 
-## 🔥 高级功能（已集成）| Advanced Features
+另一个终端中：
 
-- 🔄 自动中心新 ID 恢复追踪
-- 🛑 丢失超时自动解锁
-- 🟥 红框标记当前锁定目标
+```bash
+ros2 service call /flight/connect std_srvs/srv/Trigger '{}'
+ros2 service call /flight/takeoff std_srvs/srv/Trigger '{}'
+ros2 topic echo /flight/status
+ros2 service call /flight/land std_srvs/srv/Trigger '{}'
+```
 
-## ⚠️ 注意事项 | Notes
+离线视频回放：
 
-- 默认 CPU 推理，可配置 `torch.device('cuda')` 使用 GPU
-- 建议在稳定光照、较空旷环境测试
+```bash
+ros2 run tello_vision offline_video_publisher --ros-args \
+  -p video_path:=/path/to/video.mp4 -p loop:=true
+```
 
-## 📝 作者 | Author
+## 实机启动
 
-Fei Jia (贾飞)  
-Master in Embedded AI, ESIGELEC, Rouen  
-🇨🇳 | 🇫🇷 | ✉️ fei.jia@groupe-esigelec.org
+连接 Tello Wi-Fi 后执行：
 
-Ran Tang (汤然)  
-Master in Embedded AI, ESIGELEC, Rouen  
-🇨🇳 | 🇫🇷 | ✉️ ran.tang@groupe-esigelec.org
+```bash
+source install/setup.bash
+ros2 launch tello_bringup real.launch.py
+```
+
+系统默认不会自动起飞。设置跟踪目标：
+
+```bash
+ros2 service call /tracking/set_target tello_interfaces/srv/SetTarget '{track_id: 1}'
+ros2 service call /tracking/clear_target std_srvs/srv/Trigger '{}'
+```
+
+## 配置与诊断
+
+统一参数位于 `src/tello_bringup/config/default.yaml`。常用接口：
+
+- `/tello/telemetry`：Tello 遥测；
+- `/tello/link_status`：控制、遥测、视频链路诊断；
+- `/tracking/status`、`/tracking/cmd_vel`：跟踪结果和控制建议；
+- `/tracking/diagnostics`：推理后端、FPS、耗时、帧龄、丢帧和错误计数；
+- `/flight/status`：飞行状态、原因和状态时间；
+- `/yolo/image_out`：标注图像。
+
+故障排查先检查：
+
+```bash
+ros2 topic echo /tello/link_status
+ros2 topic hz /tello/telemetry
+ros2 topic hz /tello/image_raw
+ros2 topic echo /flight/status
+```
+
+完整设计和验收资料见 [docs/00_overview.md](docs/00_overview.md)，采购盘点使用 [docs/09_hardware_checklist.md](docs/09_hardware_checklist.md)，Jetson 预研见 [docs/10_jetson_deployment.md](docs/10_jetson_deployment.md)。

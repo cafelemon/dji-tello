@@ -1,0 +1,40 @@
+FROM ros:humble-ros-base-jammy
+
+ENV DEBIAN_FRONTEND=noninteractive
+SHELL ["/bin/bash", "-c"]
+
+RUN find /etc/apt -type f -name '*.list' -exec \
+    sed -i 's|http://ports.ubuntu.com|https://ports.ubuntu.com|g; s|http://packages.ros.org|https://packages.ros.org|g' {} + \
+    && printf 'Acquire::Retries "10";\nAcquire::http::Timeout "30";\nAcquire::https::Timeout "30";\n' \
+    >/etc/apt/apt.conf.d/80-tello-edge-retries
+
+RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
+    --mount=type=cache,target=/var/lib/apt/lists,sharing=locked \
+    apt-get update && apt-get install -y --fix-missing --no-install-recommends \
+    build-essential \
+    git \
+    libopencv-dev \
+    python3-colcon-common-extensions \
+    python3-opencv \
+    python3-pip \
+    python3-pytest \
+    python3-vcstool \
+    ros-humble-cv-bridge \
+    ros-humble-diagnostic-msgs \
+    ros-humble-geometry-msgs \
+    ros-humble-launch-ros \
+    ros-humble-ros2launch \
+    ros-humble-sensor-msgs \
+    ros-humble-std-srvs \
+    gstreamer1.0-libav \
+    gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-tools
+
+WORKDIR /workspace
+COPY . /workspace
+
+RUN source /opt/ros/humble/setup.bash && colcon build --symlink-install
+
+CMD ["bash"]

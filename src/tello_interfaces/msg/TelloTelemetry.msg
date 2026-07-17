@@ -1,0 +1,17 @@
+builtin_interfaces/Time stamp
+float32 pitch_deg
+float32 roll_deg
+float32 yaw_deg
+float32 velocity_x_cm_s
+float32 velocity_y_cm_s
+float32 velocity_z_cm_s
+float32 temperature_low_c
+float32 temperature_high_c
+float32 tof_cm
+float32 height_cm
+float32 battery_percent
+float32 barometer_cm
+float32 flight_time_s
+float32 acceleration_x
+float32 acceleration_y
+float32 acceleration_z

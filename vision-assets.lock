@@ -1,0 +1,5 @@
+YOLOV5_COMMIT=fe1d4d9947735473006c68513168fef093ff17ce
+BYTETRACK_COMMIT=d1bf0191adff59bc8fcfeaa0b33d3d1642552a99
+MODEL_URL=https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5s.pt
+MODEL_SHA256=8b3b748c1e592ddd8868022e8732fde20025197328490623cc16c6f24d0782ee
+FIXTURE_SOURCE=vendor/yolov5/data/images/zidane.jpg

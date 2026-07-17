@@ -1,0 +1,11 @@
+uint8 CONNECT=0
+uint8 STREAM_ON=1
+uint8 TAKEOFF=2
+uint8 LAND=3
+uint8 EMERGENCY=4
+
+uint8 command
+---
+bool success
+string message
+string sdk_response

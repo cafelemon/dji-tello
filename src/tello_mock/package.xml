@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tello_mock</name>
+  <version>0.1.0</version>
+  <description>Mock Tello SDK endpoints and fault injection controls.</description>
+  <maintainer email="fei.jia@groupe-esigelec.org">Fei Jia</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>diagnostic_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <exec_depend>tello_interfaces</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

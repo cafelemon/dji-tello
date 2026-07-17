@@ -1,0 +1,21 @@
+ARG BASE_IMAGE=tello-edge:humble
+FROM ${BASE_IMAGE}
+
+SHELL ["/bin/bash", "-c"]
+WORKDIR /workspace
+
+RUN --mount=type=cache,target=/root/.cache/pip \
+    python3 -m pip install -r requirements-vision.txt
+
+RUN vcs import . < dependencies.repos \
+    && touch vendor/yolov5/COLCON_IGNORE vendor/ByteTrack/COLCON_IGNORE \
+    && mkdir -p models \
+    && source vision-assets.lock \
+    && python3 -c "import hashlib, pathlib, urllib.request; p=pathlib.Path('models/yolov5s.pt'); urllib.request.urlretrieve('${MODEL_URL}', p); actual=hashlib.sha256(p.read_bytes()).hexdigest(); assert actual == '${MODEL_SHA256}', (actual, '${MODEL_SHA256}')"
+
+RUN source /opt/ros/humble/setup.bash \
+    && rm -rf build install log \
+    && colcon build --symlink-install
+
+ENV TELLO_EDGE_ROOT=/workspace
+CMD ["bash"]

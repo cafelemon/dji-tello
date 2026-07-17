@@ -1,0 +1,10 @@
+builtin_interfaces/Time stamp
+bool locked
+bool visible
+int32 target_id
+float32 confidence
+float32 center_x
+float32 center_y
+float32 width
+float32 height
+string reason

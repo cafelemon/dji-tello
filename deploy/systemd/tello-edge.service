@@ -1,0 +1,19 @@
+[Unit]
+Description=Tello Edge ROS2 flight and vision stack
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=tello
+Group=tello
+WorkingDirectory=/opt/tello-edge/current
+EnvironmentFile=/etc/tello-edge/tello-edge.env
+ExecStart=/opt/tello-edge/current/deploy/start-runtime.sh
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGINT
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

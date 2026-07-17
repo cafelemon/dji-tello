@@ -1,8 +1,0 @@
-assets
-datasets
-deploy
-exps
-tools
-tutorials
-videos
-yolox

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tello_transport_cpp</name>
+  <version>0.1.0</version>
+  <description>C++ UDP transport, telemetry, video and diagnostics for Tello.</description>
+  <maintainer email="fei.jia@groupe-esigelec.org">Fei Jia</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>cv_bridge</depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>tello_interfaces</depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tello_bringup</name>
+  <version>0.1.0</version>
+  <description>Launch files and configuration for real, mock and offline Tello modes.</description>
+  <maintainer email="fei.jia@groupe-esigelec.org">Fei Jia</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>tello_flight_manager</exec_depend>
+  <exec_depend>tello_mock</exec_depend>
+  <exec_depend>tello_transport_cpp</exec_depend>
+  <exec_depend>tello_vision</exec_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

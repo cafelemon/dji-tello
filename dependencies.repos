@@ -1,0 +1,9 @@
+repositories:
+  vendor/yolov5:
+    type: git
+    url: https://github.com/ultralytics/yolov5.git
+    version: fe1d4d9947735473006c68513168fef093ff17ce
+  vendor/ByteTrack:
+    type: git
+    url: https://github.com/ifzhang/ByteTrack.git
+    version: d1bf0191adff59bc8fcfeaa0b33d3d1642552a99
